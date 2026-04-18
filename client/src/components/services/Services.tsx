@@ -30,7 +30,7 @@ const Services = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center mb-12">
           <span className="text-primary font-bold tracking-wider leading-tight">WHAT WE DO</span>
-          <h2 className="text-4xl font-bold leading-[1.35]">Expert Drywall Repair Services</h2>
+          <h2 className="text-4xl font-bold leading-[1.35] text-center">Expert Drywall Repair Services</h2>
         </div>
         <div className="grid lg:grid-cols-3 gap-8">
           {serviceData.map(({img, alt, heading, description}) => (
