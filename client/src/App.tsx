@@ -12,12 +12,12 @@ const App = () => {
     <main className="min-h-screen overflow-hidden z-50 transition-all duration-300">
       <Header />
       <Hero />
-      {/*<Services />
+      <Services />
       <About />
       <Reviews />
       <Faq />
       <Contact />
-      <Footer /> */}
+      <Footer />
     </main>
 
   )
