@@ -40,7 +40,7 @@ const About = () => {
               <a href="#gallery" className='inline-block mt-4'>
                 <Button size='lg' className='bg-primary shadow-xl shadow-primary/25 hover:bg-primary/90'>View Our Work</Button>
               </a>
-              <div className='grid grid-cols-2 gap-16 mt-12'>
+              <div className='grid md:grid-cols-2 gap-16 mt-12'>
                 <div className='space-y-4'>
                   <p className='text-xl md:text-2xl font-semibold text-muted'>Restoring Walls, Building Trust</p>
                   <p>To deliver quality drywall repair with the craftsmanship and care that homeowners and businesses across the Inland Empire and LA County deserve.</p>
