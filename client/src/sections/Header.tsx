@@ -17,8 +17,8 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/20 backdrop-blur-2xl py-5 z-50 border-b border-muted/15">
       <nav className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#" className='flex gap-2 text-xl font-bold tracking-tight hover:text-primary'>
-          <img src={logo} alt="CiscoPatch logo" className='h-10' />
+        <a href="#" className='flex items-center shrink-0 gap-2 text-xl font-bold tracking-tight hover:text-primary'>
+          <img src={logo} alt="CiscoPatch logo" className='h-10 shrink-0' />
           <span className='self-end text-lg sm:text-xl md:text-[1.375rem] font-bold leading-none'>CiscoPatch</span>
         </a>
         <div className='hidden md:flex items-center space-x-6'>
