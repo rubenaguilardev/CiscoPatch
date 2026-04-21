@@ -19,10 +19,10 @@ const About = () => {
               <span className="text-primary text-sm font-medium tracking-wider uppercase">about us</span>
             </div>
             <p className="text-2xl md:text-3xl font-bold leading-tight">
-              CiscoPatch delivers quality drywall repair with skilled craftsmanship and a commitment to your satisfaction — restoring walls for homeowners and businesses across the Inland Empire and LA County.
+              CiscoPatch delivers quality drywall repair with skilled craftsmanship and a commitment to your satisfaction.
             </p>
           </div>
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-8 items-center">
             <div>
               <img
                 src={about1}
@@ -40,7 +40,7 @@ const About = () => {
               <a href="#gallery" className='inline-block mt-4'>
                 <Button size='lg' className='bg-primary shadow-xl shadow-primary/25 hover:bg-primary/90'>View Our Work</Button>
               </a>
-              <div className='grid md:grid-cols-2 gap-8 md:gap-16 mt-8 md:mt-12'>
+              <div className='grid md:grid-cols-2 gap-8 mt-8 md:mt-12'>
                 <div className='space-y-4'>
                   <p className='text-xl md:text-2xl font-semibold text-muted'>Restoring Walls, Building Trust</p>
                   <p>To deliver quality drywall repair with the craftsmanship and care that homeowners and businesses across the Inland Empire and LA County deserve.</p>
@@ -49,7 +49,7 @@ const About = () => {
                   <img
                     src={about2}
                     alt=""
-                    className='rounded-2xl'
+                    className='w-full min-w-70 lg:min-w-55 rounded-2xl shadow-xl max-w-md'
                   />
                 </div>
               </div>
