@@ -10,7 +10,7 @@ const Accordion = ({question, answer}: FaqItem) => {
     <button onClick={() => setAccordionOpen(!accordionOpen)} className="flex justify-between w-full">
       <span>{question}</span>
       <svg
-        className="fill-indigo-500 shrink-0 ml-8"
+        className="shrink-0 ml-8"
         width="16"
         height="16"
         xmlns="http://www.w3.org/2000/svg"
