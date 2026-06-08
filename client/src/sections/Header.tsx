@@ -7,7 +7,6 @@ const navLinks = [
   { href: '#services', label: 'Services', icon: Paintbrush },
   { href: '#about', label: 'About', icon: HardHat },
   { href: '#gallery', label: 'Gallery', icon: Image },
-  { href: '#reviews', label: 'Reviews', icon: Star },
   { href: '#faq', label: 'FAQ', icon: BadgeQuestionMark }
 ]
 
@@ -19,7 +18,7 @@ const Header = () => {
       <nav className="container mx-auto px-4 flex items-center justify-between">
         <a href="#" className='flex items-center gap-2 text-xl font-bold tracking-tight hover:text-primary'>
           <img src={logo} alt="CiscoPatch logo" className='h-10' />
-          <span className='self-end text-lg sm:text-xl md:text-[1.375rem] font-bold leading-none'>CiscoPatch</span>
+          <span className='self-end text-lg sm:text-xl md:text-[1.25rem] translate-y-0.5 font-bold leading-none'>CiscoPatch</span>
         </a>
         <div className='hidden md:flex items-center space-x-6'>
           {navLinks.map(({ href, label }) => (
