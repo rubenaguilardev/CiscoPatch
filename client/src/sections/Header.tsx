@@ -1,4 +1,4 @@
-import { Menu, X, Paintbrush, HardHat, Image, Star, BadgeQuestionMark } from 'lucide-react'
+import { Menu, X, Paintbrush, HardHat, Image, BadgeQuestionMark } from 'lucide-react'
 import logo from '../assets/header/logo.png'
 import { useState } from 'react'
 import Button from '../components/Button'
