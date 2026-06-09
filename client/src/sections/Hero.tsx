@@ -17,7 +17,7 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl font-bold leading-tight animate-in slide-in-from-bottom duration-700">
-                Your Trusted Partner for Quality Drywall Repairs
+                Expert Drywall Repairs, Done Right the First Time
               </h1>
               <p className="text-lg text-muted max-w-lg leading-relaxed animate-in slide-in-from-bottom duration-700 delay-100">
                 Professional drywall patching, crack repair, and wall restoration for residential and commercial properties.
@@ -30,7 +30,7 @@ const Hero = () => {
               </Button>
             </div>
             <p className="max-w-lg text-muted text-lg lg:text-xl font-bold leading-relaxed animate-in slide-in-from-bottom duration-700 delay-400">
-              Serving Inland Empire & LA County   |   Fast & Reliable Service  |  Satisfaction Guaranteed
+              Serving Inland Empire & LA County   |   Fast & Reliable Service  |  Clean Worksite, Every Job
             </p>
           </div>
           <div className="relative slide-in-from-right animate-in duration-700 delay-500">
