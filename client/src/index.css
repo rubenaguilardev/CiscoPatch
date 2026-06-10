@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -6,6 +6,7 @@
   --color-primary: #f04c24;
   --color-foreground: #242424;
   --color-muted: #4b545d;
+  --color-secondary: #c8c8c8;
 }
 
 @layer base {
@@ -16,8 +17,18 @@
 
   body {
     color: var(--color-foreground);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
   }
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
 }
 
 @layer utilities {

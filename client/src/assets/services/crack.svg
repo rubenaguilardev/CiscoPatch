@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+  <rect width="160" height="160" rx="10" fill="#F04C24"/>
+  <polygon points="74,0 86,0 80,32 90,52 72,76 82,100 76,128 68,128 74,100 64,76 82,52 72,32" fill="white"/>
+  <rect x="0" y="72" width="160" height="20" fill="#F04C24" opacity="0.45"/>
+  <rect x="0" y="88" width="160" height="20" fill="#F04C24" opacity="0.5"/>
+  <rect x="0" y="102" width="160" height="20" fill="#F04C24" opacity="0.7"/>
+  <path d="M0,114 L160,114 L160,150 Q160,160 150,160 L10,160 Q0,160 0,150 Z" fill="#F04C24" opacity="0.9"/>
+</svg>
