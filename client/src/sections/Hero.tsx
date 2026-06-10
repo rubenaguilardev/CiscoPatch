@@ -5,13 +5,7 @@ import Button from "../components/Button"
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      <div className="absolute inset-0">
-        <img
-          src='/hero-bg.png'
-          alt="hero background image"
-          className="w-full h-full object-cover"
-        />
-      </div>
+
       <div className="container mx-auto px-4 md:px-6 pt-32 pb-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">

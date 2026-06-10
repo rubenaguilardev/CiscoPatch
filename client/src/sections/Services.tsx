@@ -30,7 +30,7 @@ const Services = () => {
         <h2 className="text-3xl uppercase animate-in slide-in-from-bottom duration-700 mb-6 tracking-wide">
           services we provide
         </h2>
-        <div className="grid lg:grid-cols-[1fr_1fr_1.2fr] gap-4">
+        <div className="grid lg:grid-cols-[1fr_1fr_1.1fr] xl:grid-cols-[1fr_1fr_1.2fr] gap-4">
           {services.slice(0, 2).map(({ icon, heading, paragraph }) => (
             <div className='space-y-8 bg-foreground p-8 rounded-2xl'>
               <img src={icon} alt="" className='w-12' />
@@ -40,11 +40,15 @@ const Services = () => {
               </div>
             </div>
           ))}
-          <img src={remodeled} alt="" className='h-full rounded-2xl' />
+          <div className='rounded-2xl overflow-hidden h-full min-h-70'>
+            <img src={remodeled} alt="" className='h-full w-full object-cover' />
+          </div>
         </div>
-        <div className='grid lg:grid-cols-[2fr_1.175fr] gap-4'>
+        <div className='grid lg:grid-cols-[2fr_1.08fr] xl:grid-cols-[2fr_1.175fr] gap-4'>
           <div className='relative order-1 lg:order-0'>
-            <img src={bluewall} alt="" className='rounded-2xl' />
+            <div className='rounded-2xl overflow-hidden h-full min-h-70'>
+              <img src={bluewall} alt="" className='w-full h-full object-cover object-right lg:object-center' />
+            </div>
             <button className='absolute -bottom-20 md:-bottom-14 right-15 text-white text-sm font-bold bg-primary rounded-full py-12 px-4 border-14 border-white cursor-pointer'>View Results</button>
           </div>
           <div className='space-y-8 bg-foreground p-8 rounded-2xl'>

@@ -5,9 +5,19 @@ import Services from "./sections/Services"
 
 const App = () => {
   return (
-    <main className="min-h-screen overflow-hidden z-50 transition-all duration-300">
+    <main className="max-w-7xl min-h-screen mx-auto overflow-hidden z-50 transition-all duration-300">
       <Header />
-      <Hero />
+      <div>
+        <div className="absolute inset-0">
+          <img
+            src='/hero-bg.png'
+            alt="hero background image"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <Hero />
+      </div>
+
       <Services />
     </main>
 
