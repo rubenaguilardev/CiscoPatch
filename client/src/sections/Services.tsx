@@ -43,7 +43,10 @@ const Services = () => {
           <img src={remodeled} alt="" className='h-full rounded-2xl' />
         </div>
         <div className='grid grid-cols-[2fr_1.175fr] gap-4'>
-          <img src={bluewall} alt="" className='rounded-2xl' />
+          <div className='relative'>
+            <img src={bluewall} alt="" className='rounded-2xl' />
+            <button className='absolute -bottom-14 right-15 text-white text-sm font-bold bg-primary rounded-full py-12 px-4 border-14 border-white cursor-pointer'>View Results</button>
+          </div>
           <div className='space-y-8 bg-foreground p-8 rounded-2xl'>
             <img src={services[2].icon} alt="" className='w-12' />
             <div className='space-y-4'>
