@@ -30,7 +30,7 @@ const Services = () => {
         <h2 className="text-3xl uppercase animate-in slide-in-from-bottom duration-700 mb-6 tracking-wide">
           services we provide
         </h2>
-        <div className="grid md:grid-cols-[1fr_1fr_1.2fr] gap-4">
+        <div className="grid lg:grid-cols-[1fr_1fr_1.2fr] gap-4">
           {services.slice(0, 2).map(({ icon, heading, paragraph }) => (
             <div className='space-y-8 bg-foreground p-8 rounded-2xl'>
               <img src={icon} alt="" className='w-12' />
@@ -42,10 +42,10 @@ const Services = () => {
           ))}
           <img src={remodeled} alt="" className='h-full rounded-2xl' />
         </div>
-        <div className='grid grid-cols-[2fr_1.175fr] gap-4'>
-          <div className='relative'>
+        <div className='grid lg:grid-cols-[2fr_1.175fr] gap-4'>
+          <div className='relative order-1 lg:order-0'>
             <img src={bluewall} alt="" className='rounded-2xl' />
-            <button className='absolute -bottom-14 right-15 text-white text-sm font-bold bg-primary rounded-full py-12 px-4 border-14 border-white cursor-pointer'>View Results</button>
+            <button className='absolute -bottom-20 md:-bottom-14 right-15 text-white text-sm font-bold bg-primary rounded-full py-12 px-4 border-14 border-white cursor-pointer'>View Results</button>
           </div>
           <div className='space-y-8 bg-foreground p-8 rounded-2xl'>
             <img src={services[2].icon} alt="" className='w-12' />
