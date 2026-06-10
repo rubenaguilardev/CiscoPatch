@@ -29,7 +29,7 @@ const Hero = () => {
                 <ArrowBigRight className="w-4 h-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
               </Button>
             </div>
-            <p className="max-w-lg text-muted text-lg lg:text-xl font-bold leading-relaxed animate-in slide-in-from-bottom duration-700 delay-400">
+            <p className="max-w-lg text-muted roboto text-lg lg:text-xl font-bold leading-relaxed animate-in slide-in-from-bottom duration-700 delay-400">
               Serving Inland Empire & LA County   |   Fast & Reliable Service  |  Clean Worksite, Every Job
             </p>
           </div>

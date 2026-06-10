@@ -1,6 +1,8 @@
 import patch from '../assets/services/patch.svg'
 import crack from '../assets/services/crack.svg'
+import restoration from '../assets/services/restoration.svg'
 import remodeled from '../assets/services/remodeled.png'
+import bluewall from '../assets/services/bluewall.png'
 
 const services = [
   {
@@ -13,18 +15,23 @@ const services = [
     heading: 'Crack & Damage Repair',
     paragraph: 'No crack, dent, or water stain goes unaddressed. We carefully inspect and repair damage early before it has the chance to spread or cause bigger problems down the line, leaving your walls structurally sound, smooth, and looking exactly as they should.'
   },
+  {
+    icon: restoration,
+    heading: 'Wall Restoration',
+    paragraph: 'We bring damaged and worn walls back to life with a finish that blends in perfectly. Every repair is matched carefully to your existing texture, leaving results that look like they were never touched.'
+  }
 
 ]
 
 const Services = () => {
   return (
     <section className="w-full py-32 overflow-hidden">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container space-y-4 mx-auto px-4 md:px-6">
         <h2 className="text-3xl uppercase animate-in slide-in-from-bottom duration-700 mb-6 tracking-wide">
           services we provide
         </h2>
         <div className="grid md:grid-cols-[1fr_1fr_1.2fr] gap-4">
-          {services.map(({ icon, heading, paragraph }) => (
+          {services.slice(0, 2).map(({ icon, heading, paragraph }) => (
             <div className='space-y-8 bg-foreground p-8 rounded-2xl'>
               <img src={icon} alt="" className='w-12' />
               <div className='space-y-4'>
@@ -35,11 +42,18 @@ const Services = () => {
           ))}
           <img src={remodeled} alt="" className='h-full rounded-2xl' />
         </div>
-        <div>
-
+        <div className='grid grid-cols-[2fr_1.175fr] gap-4'>
+          <img src={bluewall} alt="" className='rounded-2xl' />
+          <div className='space-y-8 bg-foreground p-8 rounded-2xl'>
+            <img src={services[2].icon} alt="" className='w-12' />
+            <div className='space-y-4'>
+              <h3 className='text-2xl text-white'>{services[2].heading}</h3>
+              <p className='text-secondary'>{services[2].paragraph}</p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </section >
   )
 }
 
