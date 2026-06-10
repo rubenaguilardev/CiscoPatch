@@ -6,7 +6,7 @@ import Button from '../components/Button'
 const navLinks = [
   { href: '#services', label: 'Services', icon: Paintbrush },
   { href: '#about', label: 'About', icon: HardHat },
-  { href: '#gallery', label: 'Gallery', icon: Image },
+  { href: '#results', label: 'Results', icon: Image },
   { href: '#faq', label: 'FAQ', icon: BadgeQuestionMark }
 ]
 

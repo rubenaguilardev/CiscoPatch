@@ -46,7 +46,7 @@ const Services = () => {
         </div>
         <div className='grid lg:grid-cols-[2fr_1.175fr] gap-4'>
           <div className='relative order-1 lg:order-0'>
-            <div className='rounded-2xl overflow-hidden h-full min-h-70'>
+            <div className='rounded-2xl overflow-hidden h-full min-h-70 lg:min-h-0'>
               <img src={bluewall} alt="" className='w-full h-full object-cover object-right lg:object-center' />
             </div>
             <button className='absolute -bottom-18 right-15 text-white text-sm font-bold bg-primary rounded-full py-12 px-4 border-14 border-white cursor-pointer'>View Results</button>
