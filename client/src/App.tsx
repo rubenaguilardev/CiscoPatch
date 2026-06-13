@@ -1,6 +1,8 @@
 import Header from "./sections/Header"
 import Hero from "./sections/Hero"
 import Services from "./sections/Services"
+import About from "./sections/About"
+
 
 
 const App = () => {
@@ -17,8 +19,8 @@ const App = () => {
         </div>
         <Hero />
       </div>
-
       <Services />
+
     </main>
 
   )
