@@ -17,7 +17,7 @@ const aboutData = [
 
 const About = () => {
   return (
-    <section id='about' className="w-full overflow-hidden py-32 px-4">
+    <section id='about' className="w-full overflow-hidden py-32">
       <h2 className="lg:hidden text-2xl xl:text-3xl text-center mb-6 font-medium uppercase text-primary tracking-wide">
         why choose us
       </h2>
