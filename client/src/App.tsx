@@ -3,25 +3,24 @@ import Hero from "./sections/Hero"
 import Services from "./sections/Services"
 import About from "./sections/About"
 
-
-
 const App = () => {
   return (
-    <main className="max-w-7xl min-h-screen mx-auto overflow-hidden z-50 transition-all duration-300">
+    <main className="min-h-screen mx-auto overflow-hidden z-50 transition-all duration-300">
       <Header />
-      <div>
-        <div className="absolute inset-0">
-          <img
-            src='/hero-bg.png'
-            alt="hero background image"
-            className="w-full h-full object-cover"
-          />
+      <div className="bg-[url('/hero-bg.png')] bg-cover bg-center">
+        <div className="max-w-7xl mx-auto">
+          <Hero />
         </div>
-        <Hero />
       </div>
-      <Services />
-      <About />
-    </main>
+      <div className="max-w-7xl mx-auto">
+        <Services />
+      </div>
+      <div className="bg-[url('/about-bg.png')] bg-cover bg-center">
+        <div className="max-w-7xl mx-auto">
+          <About />
+        </div>
+      </div>
+    </main >
 
   )
 }

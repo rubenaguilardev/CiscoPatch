@@ -27,7 +27,7 @@ const Services = () => {
   return (
     <section id='services' className="w-full py-32 overflow-hidden">
       <div className="container space-y-4 mx-auto px-4 md:px-6">
-        <h2 className="text-2xl xl:text-3xl font-medium uppercase mb-6 tracking-wide">
+        <h2 className="text-2xl xl:text-3xl font-medium uppercase text-center lg:text-start text-primary mb-6 tracking-wide">
           services we provide
         </h2>
         <div className="grid lg:grid-cols-[1fr_1fr_1.2fr] gap-4">
