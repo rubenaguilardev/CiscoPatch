@@ -17,12 +17,12 @@ const aboutData = [
 
 const About = () => {
   return (
-    <section className="w-full overflow-hidden py-32 px-4">
+    <section id='about' className="w-full overflow-hidden py-32 px-4">
       <h2 className="lg:hidden text-2xl xl:text-3xl text-center mb-6 font-medium uppercase text-primary tracking-wide">
         why choose us
       </h2>
       <div className="container mx-auto lg:grid grid-cols-2 items-center lg:gap-16  px-4 md:px-6 relative space-y-6 lg:space-y-0 z-10">
-        <div className="relative slide-in-from-right animate-in duration-700 delay-500">
+        <div className="relative slide-in-from-left animate-in duration-700 delay-500">
           <div className="relative max-w-md mx-auto">
             <img
               src={aboutImg}

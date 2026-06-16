@@ -49,6 +49,10 @@ h4 {
     animation-name: slideInFromRight;
   }
 
+  .slide-in-from-left {
+    animation-name: slideInFromLeft;
+  }
+
   .duration-200 {
     animation-duration: 200ms;
   }
@@ -110,6 +114,18 @@ h4 {
   from {
     opacity: 0;
     transform: translatex(2rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translatex(-2rem);
   }
 
   to {
