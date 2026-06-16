@@ -1,7 +1,41 @@
 const About = () => {
-  <section>
-    <div>About</div>
-  </section>
+  return (
+    <section className="w-full overflow-hidden py-32">
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+      <h2>ABOUT</h2>
+    </section>
+  )
 }
 
 export default About
