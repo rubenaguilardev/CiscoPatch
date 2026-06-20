@@ -2,6 +2,7 @@ import Header from "./sections/Header"
 import Hero from "./sections/Hero"
 import Services from "./sections/Services"
 import About from "./sections/About"
+import Faq from "./sections/Faq"
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <About />
         </div>
       </div>
+      <Faq />
     </main >
 
   )
