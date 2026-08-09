@@ -1,4 +1,10 @@
-const questions = [
+export type FaqItem = {
+  question: string
+  answer: string
+}
+
+
+export const questions: FaqItem[] = [
   {
     question: "Do I need to be home for an estimate?",
     answer: "No, just upload a few photos of the damaged area through our online form, and we'll get you an estimate without needing to schedule an in-person visit."
