@@ -1,8 +1,8 @@
 import patch from '../assets/services/patch.svg'
 import crack from '../assets/services/crack.svg'
 import restoration from '../assets/services/restoration.svg'
-import remodeled from '../assets/services/remodeled.png'
-import bluewall from '../assets/services/bluewall.png'
+import remodeled from '../assets/services/hallway.avif'
+import bluewall from '../assets/services/bluewall.avif'
 
 const services = [
   {

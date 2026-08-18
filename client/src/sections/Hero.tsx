@@ -1,5 +1,5 @@
 import { ArrowBigRight } from "lucide-react"
-import heroImg from '../assets/hero/hero-img.png'
+import heroImg from '../assets/hero/hero-img.avif'
 import Button from "../components/Button"
 
 const Hero = () => {
