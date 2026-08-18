@@ -21,12 +21,9 @@ const App = () => {
           <About />
         </div>
       </div>
-      <div className="bg-[url('/about-bg.png')] bg-cover bg-center">
-        <div className="max-w-7xl mx-auto">
-          <Faq />
-        </div>
+      <div className="max-w-7xl mx-auto">
+        <Faq />
       </div>
-    
     </main >
 
   )

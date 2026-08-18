@@ -6,8 +6,8 @@ const Accordion = ({question, answer}: FaqItem) => {
 
   const [accordionOpen, setAccordionOpen] = useState(false)
 
-  return <div className="py-2 px-3">
-    <button onClick={() => setAccordionOpen(!accordionOpen)} className="flex justify-between w-full">
+  return <div className="py-2">
+    <button onClick={() => setAccordionOpen(!accordionOpen)} className="flex justify-between w-full cursor-pointer">
       <span>{question}</span>
       <svg
         className="shrink-0 ml-8"
@@ -38,7 +38,7 @@ const Accordion = ({question, answer}: FaqItem) => {
     <div className={`grid overflow-hidden transitiona-all duraction-300 ease-in-out text-sm
       ${accordionOpen ? "grid-rows[1fr] opacity-100" : "grid-rows[0fr] opacity-0"}
     `}>
-      <div>{answer}</div>
+      <div className={`${accordionOpen ? 'flex py-6' : 'hidden'}`}>{answer}</div>
     </div>
   </div>
 }
