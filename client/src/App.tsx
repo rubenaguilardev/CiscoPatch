@@ -16,7 +16,7 @@ const App = () => {
       <div className="max-w-7xl mx-auto">
         <Services />
       </div>
-      <div className="bg-[url('/about-bg.png')] bg-cover bg-center">
+      <div className="bg-[url('/bg.png')] bg-cover bg-bottom">
         <div className="max-w-7xl mx-auto">
           <About />
         </div>

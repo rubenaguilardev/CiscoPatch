@@ -26,7 +26,7 @@ export const questions: FaqItem[] = [
     answer: "Yes. We carefully match texture and finish to your existing walls so the repair blends in seamlessly, not just patched over."
   },
   {
-    question: "Can you repair water-damaged drywall, or does it need to be replaced?",
+    question: "Can you repair water-damaged drywall?",
     answer: "It depends on the extent of the damage. Minor water staining or softening can often be repaired, while more severe damage may require replacing the affected section. We'll assess this during your estimate."
   },
   {
