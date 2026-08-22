@@ -12,7 +12,7 @@ const Faq = () => {
           <p className="max-w-130 text-lg text-secondary font-medium leading-normal">
             Have more questions? Reach out to our team or submit an estimation request.
           </p>
-          <button className='absolute top-[58%] left-[52%] text-white text-sm font-bold bg-primary rounded-full py-12 px-4 border-14 border-white cursor-pointer'>
+          <button className='absolute top-[58%] left-[52%] text-white text-sm font-bold bg-primary rounded-full lg:py-10 lg:px-2 xl:py-12 xl:px-4 border-14 border-white cursor-pointer'>
             Get Estimate
           </button>
         </div>
