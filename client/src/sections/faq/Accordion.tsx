@@ -2,15 +2,18 @@ import { useState } from "react"
 import type { FaqItem } from "./data"
 
 
-const Accordion = ({question, answer, category}: FaqItem) => {
+const Accordion = ({question, answer, category, id}: FaqItem) => {
 
   const [accordionOpen, setAccordionOpen] = useState(false)
+
+  const isFirstInCategory = id === `${category}0`
+  const isLastInCategory = id === `${category}4`
 
   return (
   
   <div className="hover:text-primary transition-colors duration-150">
-    <button onClick={() => setAccordionOpen(!accordionOpen)} className={`w-full flex justify-between cursor-pointer ${accordionOpen ? "bg-[#4D2C24]" : ""} `}>
-      <div className={`flex justify-between w-full mx-8 pt-8 pb-6 ${accordionOpen ? "border-none" : "border-b border-muted"}`}>
+    <button onClick={() => setAccordionOpen(!accordionOpen)} className={`w-full flex justify-between cursor-pointer ${accordionOpen ? "bg-[#4D2C24] text-primary font-bold" : ""}`}>
+      <div className={`flex justify-between w-full mx-8 ${accordionOpen ? "border-none" : "border-b border-muted"} ${isFirstInCategory ? "pt-3" : "pt-8"} ${isLastInCategory ? "border-none pb-0" : "pb-6"}`}>
       <span className="">{question}</span>
       <div className="flex items-center justify-center p-1 rounded-full border text-primary">
         <svg

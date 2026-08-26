@@ -51,8 +51,8 @@ const Faq = () => {
                 <p className="font-bold text-sm text-secondary">Pricing and estimates</p>
               </div>
             </div>
-            {questions.map(({question, answer, category}, index) => (
-          <Accordion key={index} question={question} answer={answer} category={category} />
+            {questions.map(({question, answer, category, id}, index) => (
+          <Accordion key={index} question={question} answer={answer} category={category} id={id}/>
         ))} 
           </div>
     </section>

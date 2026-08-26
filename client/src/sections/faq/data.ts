@@ -2,6 +2,7 @@ export type FaqItem = {
   question: string
   answer: string
   category: string
+  id: string
 }
 
 
@@ -59,26 +60,31 @@ export const questions: FaqItem[] = [
   {
     question: "How much does drywall repair cost?",
     answer: "It depends on the size and severity of the damage. Small patches and nail holes are typically quick and affordable, while larger cracks, water damage, or full wall restoration take more time and materials. We'll give you a clear estimate before any work begins.",
-    category: "Cost"
+    category: "Cost",
+    id: "Cost0"
   },
   {
     question: "Are materials included in the price?",
     answer: "Yes, all materials needed for your repair, including drywall, joint compound, and paint, are included in your estimate.",
-    category: "Cost"
+    category: "Cost",
+    id: "Cost1"
   },
   {
     question: "Is the estimate free?",
     answer: "Yes, estimates are completely free with no obligation. Just submit your photos through our online form and we'll send you a detailed quote.",
-    category: "Cost"
+    category: "Cost",
+    id: "Cost2"
   },
   {
     question: "Are there any hidden fees or charges?",
     answer: "No. The price we quote in your estimate is the price you pay, unless the scope of work changes once we begin, such as discovering additional damage behind the wall.",
-    category: "Cost"
+    category: "Cost",
+    id: "Cost3"
   },
   {
     question: "What payment methods do you accept?",
     answer: "We accept all major credit cards, debit cards, and cash. Payment details will be confirmed when your estimate is finalized.",
-    category: "Cost"
+    category: "Cost",
+    id: "Cost4"
   }
 ]
