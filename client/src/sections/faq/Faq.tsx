@@ -33,7 +33,13 @@ const Faq = () => {
         </div>
         <div className="flex justify-center text-center gap-0.75 mt-32">
           {labels.map((label, index) => (
-            <div key={index} className="py-4 w-40 bg-foreground text-primary text-lg font-bold rounded-t-lg">{label}</div>
+            <div 
+              key={index}
+              onClick={() => setActiveLabel(label)} 
+              className={`py-4 w-40 rounded-t-lg text-lg font-bold ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary hover:bg-[#4D2C24]/80"} transition-colors duration-150 cursor-pointer`}
+            >
+              {label}
+            </div>
           ))}
         </div>
     </section>
