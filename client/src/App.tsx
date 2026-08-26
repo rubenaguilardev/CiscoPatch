@@ -8,7 +8,7 @@ const App = () => {
   return (
     <main className="min-h-screen mx-auto overflow-hidden z-50 transition-all duration-300">
       <Header />
-      <div className="bg-[url('/hero-bg.png')] bg-cover bg-center">
+      <div >
         <div className="max-w-7xl mx-auto">
           <Hero />
         </div>
@@ -16,7 +16,7 @@ const App = () => {
       <div className="max-w-7xl mx-auto">
         <Services />
       </div>
-      <div className="bg-[url('/bg.png')] bg-cover bg-bottom">
+      <div>
         <div className="max-w-7xl mx-auto">
           <About />
         </div>
@@ -30,3 +30,5 @@ const App = () => {
 }
 
 export default App
+
+// className="bg-[url('/hero-bg.png')] bg-cover bg-center"
