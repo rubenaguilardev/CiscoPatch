@@ -1,7 +1,13 @@
 // import Accordion from "./Accordion"
 // import { questions } from "./data.ts"
 
+import { useState } from "react"
+
+const labels = ['General', 'Time', 'Cost', 'Repair', 'Cleanup']
+
 const Faq = () => {
+
+  const [activeLabel, setActiveLabel] = useState("General")
   return (
     <section id='faq' className="py-32 overflow-hidden w-full">
       <div className="container space-y-4 mx-auto px-4 md:px-6 relative">
@@ -18,10 +24,17 @@ const Faq = () => {
             Get Estimate
           </button>
         </div>
+
+        
     
         {/* {questions.map(({question, answer}, index) => (
           <Accordion key={index} question={question} answer={answer} />
         ))} */}
+        </div>
+        <div className="flex justify-center text-center gap-0.75 mt-32">
+          {labels.map((label, index) => (
+            <div key={index} className="py-4 w-40 bg-foreground text-primary text-lg font-bold rounded-t-lg">{label}</div>
+          ))}
         </div>
     </section>
       
