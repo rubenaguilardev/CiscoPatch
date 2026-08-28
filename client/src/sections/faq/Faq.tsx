@@ -4,7 +4,7 @@ import { CircleDollarSign } from 'lucide-react'
 import { useState } from "react"
 
 
-const labels = ['General', 'Time', 'Cost', 'Repair', 'Cleanup']
+const labels = ['General', 'Time', 'Repair', 'Cost', 'Cleanup']
 
 const Faq = () => {
 
@@ -28,13 +28,13 @@ const Faq = () => {
 
 
       </div>
-      <div className="container space-y-4 mx-auto px-4 md:px-6 relative">
-        <div className="flex justify-center text-center gap-0.75 mt-32">
+      <div className="container space-y-4 mx-auto px-6 md:px-6 relative">
+        <div className="flex flex-wrap justify-center text-center gap-0.75 mt-32">
           {labels.map((label, index) => (
             <div
               key={index}
               onClick={() => setActiveLabel(label)}
-              className={`w-36 h-13 flex justify-center items-center rounded-t-2xl text-lg font-bold ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary hover:bg-[#4D2C24]/80"} transition-colors duration-250 ease-in-out cursor-pointer`}
+              className={`w-28 h-9 md:w-36 md:h-13 flex justify-center items-center rounded-t-2xl md:text-lg font-bold ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary hover:bg-[#4D2C24]/80"} transition-colors duration-250 ease-in-out cursor-pointer`}
             >
               {label}
             </div>
@@ -44,7 +44,7 @@ const Faq = () => {
       </div>
       <div className="container space-y-4 mx-auto px-4 md:px-6 relative">
         <div className="max-w-206 mx-auto py-8 flex flex-col text-white bg-foreground rounded-2xl">
-          <div className="flex items-center gap-3 mb-8 px-4 md:px-8">
+          <div className="flex items-center gap-3 mb-8 px-6 md:px-8">
             <CircleDollarSign className="w-8 h-8 text-primary" />
             <div>
               <h3 className="text-lg font-bold ">Cost</h3>

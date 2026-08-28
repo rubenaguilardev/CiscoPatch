@@ -49,7 +49,7 @@ const Services = () => {
             <div className='rounded-2xl overflow-hidden h-full min-h-70 lg:min-h-0'>
               <img src={bluewall} alt="" className='w-full h-full object-cover object-right lg:object-center' />
             </div>
-            <button className='absolute -bottom-18 right-15 text-white text-sm font-bold bg-primary rounded-full py-12 px-4 border-14 border-white cursor-pointer'>View Results</button>
+            <button className='absolute -bottom-16 md:-bottom-18 right-15 text-white text-xs lg:text-sm font-bold bg-primary rounded-full py-10 px-2 xl:py-12 xl:px-4 border-14 border-white cursor-pointer'>View Results</button>
           </div>
           <div className='space-y-8 bg-foreground p-8 rounded-2xl'>
             <img src={services[2].icon} alt="" className='w-10 xl:w-12' />
