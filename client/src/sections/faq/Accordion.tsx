@@ -13,8 +13,8 @@ const Accordion = ({ question, answer, category, id }: FaqItem) => {
 
     <div className="hover:text-primary transition-colors duration-150">
       <button onClick={() => setAccordionOpen(!accordionOpen)} className={`w-full flex justify-between cursor-pointer ${accordionOpen ? "bg-[#4D2C24] text-primary font-bold" : ""}`}>
-        <div className={`flex justify-between w-full mx-8 ${accordionOpen ? "border-none" : "border-b border-muted"} ${isFirstInCategory ? "pt-3" : "pt-8"} ${isLastInCategory ? "border-none pb-0" : "pb-6"}`}>
-          <span className="">{question}</span>
+        <div className={`flex justify-between w-full mx-6 ${accordionOpen ? "border-none" : "border-b border-muted"} ${isFirstInCategory ? "pt-3" : "pt-8"} ${isLastInCategory ? "border-none pb-0" : "pb-6"}`}>
+          <span className="text-sm font-medium md:text-base">{question}</span>
           <div className="flex items-center justify-center p-1 rounded-full border text-primary">
             <svg
               className="shrink-0"
@@ -48,7 +48,7 @@ const Accordion = ({ question, answer, category, id }: FaqItem) => {
       <div className={`grid overflow-hidden transitiona-all duraction-300 ease-in-out text-sm bg-[#4D2C24]
       ${accordionOpen ? "grid-rows[1fr] opacity-100" : "grid-rows[0fr] opacity-0"}
     `}>
-        <div className={`${accordionOpen ? 'max-w-3xl flex pt-2 pb-6 px-8 text-secondary font-medium' : 'hidden'}`}>{answer}</div>
+        <div className={`${accordionOpen ? 'max-w-3xl pb-6 px-4 text-xs text-secondary font-medium' : 'hidden'}`}>{answer}</div>
       </div>
     </div>
   )
