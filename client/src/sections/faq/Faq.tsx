@@ -26,15 +26,14 @@ const Faq = () => {
           </button>
         </div>
 
-
       </div>
-      <div className="container space-y-4 ml-4 mr-4 px-6 md:px-6 relative">
-        <div className="grid grid-cols-2 text-center mt-28 md:mt-32">
+      <div className="container space-y-4 mx-auto md:px-6 relative">
+        <div className="grid grid-cols-2 md:flex md:justify-center mt-28 md:mt-32">
           {labels.map((label, index) => (
             <div
               key={index}
               onClick={() => setActiveLabel(label)}
-              className={`max-w-40 rounded-t-2xl md:text-lg font-bold py-2 ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary hover:bg-[#4D2C24]/80"} transition-colors duration-250 ease-in-out cursor-pointer`}
+              className={`w-40 h-13 flex justify-center items-center rounded-t-2xl text-lg font-bold $ ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary md:hover:bg-muted/90"} transition-colors duration-250 ease-in-out cursor-pointer`}
             >
               {label}
             </div>
