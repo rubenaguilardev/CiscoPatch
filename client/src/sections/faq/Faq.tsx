@@ -4,7 +4,7 @@ import { CircleDollarSign } from 'lucide-react'
 import { useState } from "react"
 
 
-const labels = ['General', 'Time', 'Repair', 'Cost', 'Cleanup']
+const labels = ['General', 'Time', 'Repair', 'Cost']
 
 const Faq = () => {
 
@@ -17,7 +17,7 @@ const Faq = () => {
             <h2 className="text-xl xl:text-3xl font-bold uppercase text-primary tracking-wide leading-none">
               Frequently asked questions
             </h2>
-            <p className="max-w-130 lg:text-lg pb-8 text-secondary font-medium leading-normal">
+            <p className="max-w-130 lg:text-lg pb-8 md:pb-0 text-secondary font-medium leading-normal">
               Have more questions? Reach out to our team or submit an estimation request.
             </p>
           </div>
@@ -28,13 +28,13 @@ const Faq = () => {
 
 
       </div>
-      <div className="container space-y-4 mx-auto px-6 md:px-6 relative">
-        <div className="flex flex-wrap justify-center text-center gap-0.75 mt-32">
+      <div className="container space-y-4 ml-4 mr-4 px-6 md:px-6 relative">
+        <div className="grid grid-cols-2 text-center mt-28 md:mt-32">
           {labels.map((label, index) => (
             <div
               key={index}
               onClick={() => setActiveLabel(label)}
-              className={`w-28 h-9 md:w-36 md:h-13 flex justify-center items-center rounded-t-2xl md:text-lg font-bold ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary hover:bg-[#4D2C24]/80"} transition-colors duration-250 ease-in-out cursor-pointer`}
+              className={`max-w-40 rounded-t-2xl md:text-lg font-bold py-2 ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary hover:bg-[#4D2C24]/80"} transition-colors duration-250 ease-in-out cursor-pointer`}
             >
               {label}
             </div>
