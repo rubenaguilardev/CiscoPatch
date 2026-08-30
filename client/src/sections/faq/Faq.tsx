@@ -1,10 +1,11 @@
 import Accordion from "./Accordion"
-import { questions } from "./data.ts"
-import { CircleDollarSign } from 'lucide-react'
+import { questions, headings } from "./data.ts"
+
 import { useState } from "react"
 
 
-const labels = ['General', 'Time', 'Cost', 'Repair', 'Cleanup']
+const labels = ['General', 'Time', 'Repair', 'Cost']
+const Icon = headings[0].icon
 
 const Faq = () => {
 
@@ -17,47 +18,50 @@ const Faq = () => {
             <h2 className="text-xl xl:text-3xl font-bold uppercase text-primary tracking-wide leading-none">
               Frequently asked questions
             </h2>
-            <p className="max-w-130 lg:text-lg text-secondary font-medium leading-normal">
+            <p className="max-w-130 lg:text-lg pb-8 md:pb-0 text-secondary font-medium leading-normal">
               Have more questions? Reach out to our team or submit an estimation request.
             </p>
           </div>
-          <button className='absolute top-[66%] md:top-[58%] left-[65%] md:left-[55%] text-white text-xs lg:text-sm font-bold bg-primary rounded-full py-10 px-2 xl:py-12 xl:px-4 border-12 md:border-14 border-white cursor-pointer'>
+          <button className='absolute top-[73%] md:top-[58%] left-[54%] md:left-[55%] text-white text-xs lg:text-sm font-bold bg-primary rounded-full py-10 px-2 xl:py-12 xl:px-4 border-12 md:border-14 border-white cursor-pointer'>
             Get Estimate
           </button>
         </div>
 
-        
-    
-        
-        </div>
-        <div className="flex justify-center text-center gap-0.75 mt-32">
+      </div>
+      <div className="container space-y-4 mx-auto md:px-6 relative">
+        <div className="flex justify-center gap-1 mt-28 md:mt-32">
           {labels.map((label, index) => (
-            <div 
+            <div
               key={index}
-              onClick={() => setActiveLabel(label)} 
-              className={`w-36 h-13 flex justify-center items-center rounded-t-2xl text-lg font-bold ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary hover:bg-[#4D2C24]/80"} transition-colors duration-250 ease-in-out cursor-pointer`}
+              onClick={() => setActiveLabel(label)}
+              className={`flex justify-center items-center py-3 px-5 md:px-10 rounded-t-2xl text-lg font-bold $ ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary md:hover:bg-muted/90"} transition-colors duration-250 ease-in-out cursor-pointer`}
             >
               {label}
             </div>
           ))}
-        
+
         </div>
-          
-          <div className="max-w-206 mx-auto py-8 flex flex-col text-white bg-foreground rounded-2xl">
-            <div className="flex items-center gap-3 mb-8 px-8">
-              <CircleDollarSign className="w-8 h-8 text-primary"/>
+      </div>
+      <div className="container space-y-4 mx-auto px-4 md:px-6 relative">
+        <div className="max-w-206 mx-auto py-8 flex flex-col text-white bg-foreground rounded-2xl">
+          <div className="flex items-center gap-3 mb-8 px-6 md:px-8">
+            <div className="flex items-center gap-3">
+              <Icon className="w-8 h-8 text-primary" />
               <div>
-                <h3 className="text-lg font-bold ">Cost</h3>
-                <p className="font-bold text-sm text-secondary">Pricing and estimates</p>
+                <h3 className="text-lg font-bold ">{headings[0].title}</h3>
+                <p className="font-bold text-sm text-secondary">{headings[0].subtitle}</p>
               </div>
             </div>
-            {questions.map(({question, answer, category, id}, index) => (
-          <Accordion key={index} question={question} answer={answer} category={category} id={id}/>
-        ))} 
           </div>
-    </section>
-      
-      
+
+          {questions.map(({ question, answer, category, id }, index) => (
+            <Accordion key={index} question={question} answer={answer} category={category} id={id} />
+          ))}
+        </div>
+      </div>
+    </section >
+
+
   )
 }
 
