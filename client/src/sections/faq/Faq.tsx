@@ -27,7 +27,7 @@ const Faq = () => {
               Have more questions? Reach out to our team or submit an estimation request.
             </p>
           </div>
-          <button className='absolute top-[73%] md:top-[58%] left-[54%] md:left-[55%] text-white text-xs lg:text-sm font-bold bg-primary rounded-full py-10 px-2 xl:py-12 xl:px-4 border-12 md:border-14 border-white cursor-pointer'>
+          <button className='absolute top-[73%] md:top-[58%] left-[54%] md:left-[55%] text-white text-xs lg:text-sm font-bold bg-primary rounded-full py-10 px-2.25 xl:py-12 xl:px-4 border-12 md:border-14 border-white cursor-pointer'>
             Get Estimate
           </button>
         </div>
