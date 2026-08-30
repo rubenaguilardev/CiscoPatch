@@ -34,7 +34,7 @@ const Faq = () => {
             <div
               key={index}
               onClick={() => setActiveLabel(label)}
-              className={`flex justify-center items-center py-3 px-5 md:px-10 rounded-t-2xl text-lg font-bold $ ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary md:hover:bg-muted/90"} transition-colors duration-250 ease-in-out cursor-pointer`}
+              className={`flex justify-center items-center py-2 px-4.25 md:px-10 rounded-t-2xl md:text-lg font-bold $ ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary md:hover:bg-muted/90"} transition-colors duration-250 ease-in-out cursor-pointer`}
             >
               {label}
             </div>
