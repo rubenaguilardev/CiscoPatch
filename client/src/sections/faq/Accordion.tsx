@@ -13,8 +13,8 @@ const Accordion = ({ question, answer, category, id }: FaqItem) => {
 
     <div className="hover:text-primary transition-colors duration-150">
       <button onClick={() => setAccordionOpen(!accordionOpen)} className={`w-full flex justify-between cursor-pointer ${accordionOpen ? "bg-[#4D2C24] text-primary font-bold" : ""}`}>
-        <div className={`flex justify-between w-full mx-6 md:mx-8 ${accordionOpen ? "border-none" : "border-b border-muted"} ${isFirstInCategory ? "pt-3" : "pt-8"} ${isLastInCategory ? "border-none pb-0" : "pb-6"}`}>
-          <span className="text-sm font-medium md:text-base">{question}</span>
+        <div className={`flex justify-between items-center w-full mx-6 md:mx-8 ${accordionOpen ? "border-none" : "border-b border-muted"} ${isFirstInCategory ? "pt-3" : "pt-8"} ${isLastInCategory ? "border-none pb-0" : "pb-6"}`}>
+          <span className="max-w-62 text-start text-sm font-medium md:text-base">{question}</span>
           <div className="flex items-center justify-center p-1 rounded-full border text-primary">
             <svg
               className="shrink-0"
