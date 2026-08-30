@@ -1,10 +1,11 @@
 import Accordion from "./Accordion"
-import { questions } from "./data.ts"
-import { CircleDollarSign } from 'lucide-react'
+import { questions, headings } from "./data.ts"
+
 import { useState } from "react"
 
 
 const labels = ['General', 'Time', 'Repair', 'Cost']
+const Icon = headings[0].icon
 
 const Faq = () => {
 
@@ -28,12 +29,12 @@ const Faq = () => {
 
       </div>
       <div className="container space-y-4 mx-auto md:px-6 relative">
-        <div className="grid grid-cols-2 md:flex md:justify-center mt-28 md:mt-32">
+        <div className="flex justify-center gap-1 mt-28 md:mt-32">
           {labels.map((label, index) => (
             <div
               key={index}
               onClick={() => setActiveLabel(label)}
-              className={`w-40 h-13 flex justify-center items-center rounded-t-2xl text-lg font-bold $ ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary md:hover:bg-muted/90"} transition-colors duration-250 ease-in-out cursor-pointer`}
+              className={`flex justify-center items-center py-3 px-5 md:px-10 rounded-t-2xl text-lg font-bold $ ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary md:hover:bg-muted/90"} transition-colors duration-250 ease-in-out cursor-pointer`}
             >
               {label}
             </div>
@@ -44,18 +45,21 @@ const Faq = () => {
       <div className="container space-y-4 mx-auto px-4 md:px-6 relative">
         <div className="max-w-206 mx-auto py-8 flex flex-col text-white bg-foreground rounded-2xl">
           <div className="flex items-center gap-3 mb-8 px-6 md:px-8">
-            <CircleDollarSign className="w-8 h-8 text-primary" />
-            <div>
-              <h3 className="text-lg font-bold ">Cost</h3>
-              <p className="font-bold text-sm text-secondary">Pricing and estimates</p>
+            <div className="flex items-center gap-3">
+              <Icon className="w-8 h-8 text-primary" />
+              <div>
+                <h3 className="text-lg font-bold ">{headings[0].title}</h3>
+                <p className="font-bold text-sm text-secondary">{headings[0].subtitle}</p>
+              </div>
             </div>
           </div>
+
           {questions.map(({ question, answer, category, id }, index) => (
             <Accordion key={index} question={question} answer={answer} category={category} id={id} />
           ))}
         </div>
       </div>
-    </section>
+    </section >
 
 
   )
