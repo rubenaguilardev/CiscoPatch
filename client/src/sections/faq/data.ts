@@ -1,9 +1,26 @@
+import { Info, Clock, CircleDollarSign, Toolbox } from 'lucide-react'
+import type { LucideIcon } from "lucide-react"
+
+export type headingItem = {
+  title: string
+  subtitle: string
+  icon: LucideIcon
+}
+
 export type FaqItem = {
   question: string
   answer: string
   category: string
   id: string
 }
+
+export const headings: headingItem[] = [
+  { title: "General", subtitle: "About CiscoPatch", icon: Info },
+  { title: "Time", subtitle: "Scheduling & timelines", icon: Clock },
+  { title: "Cost", subtitle: "Pricing and estimates", icon: CircleDollarSign },
+  { title: "Repair", subtitle: "The repair process", icon: Toolbox }
+]
+
 
 
 export const questions: FaqItem[] = [
