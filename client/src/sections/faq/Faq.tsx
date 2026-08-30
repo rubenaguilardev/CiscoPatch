@@ -9,7 +9,10 @@ const Icon = headings[0].icon
 
 const Faq = () => {
 
-  const [activeLabel, setActiveLabel] = useState("General")
+  const [activeLabel, setActiveLabel] = useState("Repair")
+
+  const filteredData = questions.filter(question => question.id.includes(activeLabel))
+
   return (
     <section id='faq' className="py-32 overflow-hidden w-full">
       <div className="container space-y-4 mx-auto px-4 md:px-6 relative">
@@ -54,7 +57,7 @@ const Faq = () => {
             </div>
           </div>
 
-          {questions.map(({ question, answer, category, id }, index) => (
+          {filteredData.map(({ question, answer, category, id }, index) => (
             <Accordion key={index} question={question} answer={answer} category={category} id={id} />
           ))}
         </div>
