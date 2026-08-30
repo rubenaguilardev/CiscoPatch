@@ -16,7 +16,7 @@ const Faq = () => {
   const Icon = heading.icon
 
   return (
-    <section id='faq' className="py-32 overflow-hidden w-full">
+    <section id='faq' className="py-16 md:py-24 lg:py-32 overflow-hidden w-full">
       <div className="container space-y-4 mx-auto px-4 md:px-6 relative">
         <div className="bg-foreground p-8 rounded-2xl lg:bg-[url('/faq-bg.png')] bg-no-repeat bg-bottom-right">
           <div className="flex flex-col gap-4">
@@ -34,7 +34,7 @@ const Faq = () => {
 
       </div>
       <div className="container space-y-4 mx-auto md:px-6 relative">
-        <div className="flex justify-center gap-1 mt-28 md:mt-32">
+        <div className="flex justify-center gap-1 mt-24 md:mt-32">
           {labels.map((label, index) => (
             <div
               key={index}
