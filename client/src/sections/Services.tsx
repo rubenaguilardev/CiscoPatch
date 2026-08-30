@@ -25,7 +25,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id='services' className="w-full py-32 overflow-hidden">
+    <section id='services' className="w-full py-16 md:py-24 lg:py-32 overflow-hidden">
       <div className="container space-y-4 mx-auto px-4 md:px-6">
         <h2 className="text-2xl xl:text-3xl font-medium uppercase text-center lg:text-start text-primary mb-6 tracking-wide">
           services we provide

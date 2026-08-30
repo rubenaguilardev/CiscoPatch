@@ -48,7 +48,7 @@ const Accordion = ({ question, answer, category, id }: FaqItem) => {
       <div className={`grid overflow-hidden transitiona-all duraction-300 ease-in-out text-sm bg-[#4D2C24]
       ${accordionOpen ? "grid-rows[1fr] opacity-100" : "grid-rows[0fr] opacity-0"}
     `}>
-        <div className={`${accordionOpen ? 'max-w-3xl pb-6 px-4 md:px-8 text-xs text-secondary font-medium' : 'hidden'}`}>{answer}</div>
+        <div className={`${accordionOpen ? 'max-w-3xl py-6 px-6 md:px-8 text-xs text-secondary font-medium' : 'hidden'}`}>{answer}</div>
       </div>
     </div>
   )
