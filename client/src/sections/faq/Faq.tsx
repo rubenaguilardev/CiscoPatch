@@ -5,13 +5,15 @@ import { useState } from "react"
 
 
 const labels = ['General', 'Time', 'Repair', 'Cost']
-const Icon = headings[0].icon
+
 
 const Faq = () => {
 
-  const [activeLabel, setActiveLabel] = useState("Repair")
+  const [activeLabel, setActiveLabel] = useState("General")
 
-  const filteredData = questions.filter(question => question.id.includes(activeLabel))
+  const filteredQuestions = questions.filter(question => question.id.includes(activeLabel))
+  const heading = headings.find(heading => heading.title === activeLabel) ?? headings[0]
+  const Icon = heading.icon
 
   return (
     <section id='faq' className="py-32 overflow-hidden w-full">
@@ -51,13 +53,13 @@ const Faq = () => {
             <div className="flex items-center gap-3">
               <Icon className="w-8 h-8 text-primary" />
               <div>
-                <h3 className="text-lg font-bold ">{headings[0].title}</h3>
-                <p className="font-bold text-sm text-secondary">{headings[0].subtitle}</p>
+                <h3 className="text-lg font-bold ">{heading.title}</h3>
+                <p className="font-bold text-sm text-secondary">{heading.subtitle}</p>
               </div>
             </div>
           </div>
 
-          {filteredData.map(({ question, answer, category, id }, index) => (
+          {filteredQuestions.map(({ question, answer, category, id }, index) => (
             <Accordion key={index} question={question} answer={answer} category={category} id={id} />
           ))}
         </div>
