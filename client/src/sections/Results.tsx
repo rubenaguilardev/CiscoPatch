@@ -15,6 +15,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 const Results = () => {
   return (
+<<<<<<< HEAD
     <section id='results' className="min-h-screen flex items-center overflow-hidden">
       <div className="container space-y-4 mx-auto px-4 md:px-6">
               <EmblaCarousel
@@ -25,6 +26,9 @@ const Results = () => {
       </div>
 
     </section>
+=======
+    <section id="results"></section>
+>>>>>>> ef18b21 (styling updates)
   )
 }
 
