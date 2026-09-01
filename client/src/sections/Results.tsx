@@ -5,7 +5,7 @@ import img1 from "../assets/temp/temp.jpg"
 import img2 from "../assets/temp/temp1.png"
 
 
-const OPTIONS: EmblaOptionsType = {}
+const OPTIONS: EmblaOptionsType = { watchDrag: false }
 const SLIDES = [
   { beforeSrc: img1, afterSrc: img2, alt: 'Living room drywall repair' },
   { beforeSrc: img1, afterSrc: img2, alt: 'Living room drywall repair' },
