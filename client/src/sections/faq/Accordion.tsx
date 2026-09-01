@@ -17,9 +17,8 @@ const Accordion = ({ question, answer, category, id }: FaqItem) => {
           <span className="max-w-62 md:max-w-none text-start text-sm font-medium md:text-base">{question}</span>
           <div className="flex items-center justify-center p-1 rounded-full border text-primary">
             <svg
-              className="shrink-0"
-              width="16"
-              height="16"
+              className="shrink-0 w-3 h-3 md:w-4 md:h-4"
+              viewBox="0 0 16 16"
               xmlns="http://www.w3.org/2000/svg"
             >
               <rect
