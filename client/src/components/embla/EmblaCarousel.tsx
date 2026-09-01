@@ -2,9 +2,11 @@ import { useState, useEffect, useCallback } from 'react'
 import type { EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
 import { Thumb } from './EmblaCarouselThumbsButton'
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider'
 
 type SlideType = {
-  src: string
+  beforeSrc: string
+  afterSrc: string
   alt: string
 }
 
@@ -49,7 +51,11 @@ const EmblaCarousel = (props: PropType) => {
         <div className="embla__container">
           {slides.map((slide, index) => (
             <div className="embla__slide" key={index}>
-              <img className="embla__slide__img" src={slide.src} alt={slide.alt} />
+              <ReactCompareSlider
+                itemOne={<ReactCompareSliderImage src={slide.beforeSrc} alt={`${slide.alt}, before`} />}
+                itemTwo={<ReactCompareSliderImage src={slide.afterSrc} alt={`${slide.alt}, after`} />}
+                style={{ height: '100%', width: '100%', borderRadius: '1rem', overflow: 'hidden' }}
+              />
             </div>
           ))}
         </div>
