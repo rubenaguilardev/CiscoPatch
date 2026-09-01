@@ -43,6 +43,7 @@
 .embla-thumbs__container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin-left: calc(var(--thumbs-slide-spacing) * -1);
 }
 
@@ -54,7 +55,7 @@
 
 @media (min-width: 576px) {
   .embla-thumbs__slide {
-    flex: 0 0 10%;
+    flex: 0 0 8%;
   }
 }
 
@@ -70,11 +71,11 @@
   border: 0;
   padding: 0;
   margin: 0;
-  border: 2px solid #999999;
+  border: 1px solid;
   border-radius: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  color: var(--detail-high-contrast);
+  color: #999;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,4 +86,5 @@
 .embla-thumbs__slide--selected .embla-thumbs__slide__number {
   color: var(--text-body);
   background-color: var(--color-primary);
+  color: white;
 }
