@@ -22,10 +22,15 @@ const Footer = () => {
               <span>Lasting Walls.</span>
             </div>
           </div>
-          <div className="w-60 flex flex-wrap justify-between items-center px-8 gap-4 border-l border-r border-white">
-            {links.map(({ link, label }, index) => (
-              <a key={index} href={link}>{label}</a>
-            ))}
+          <div className="flex">
+            <div className="w-60 flex flex-wrap justify-between items-center px-8 py-4 gap-4 border-l border-r border-white">
+              {links.map(({ link, label }, index) => (
+                <a key={index} href={link} className={`${index === 3 ? "mr-4" : ""}`}>{label}</a>
+              ))}
+            </div>
+            <div className="pl-8">
+              <span className="text-muted text-xs">@ 2026 CiscoPatch. All rights reserved.</span>
+            </div>
           </div>
         </div>
       </div>
