@@ -30,7 +30,9 @@ const App = () => {
       <div className="max-w-7xl mx-auto">
         <Faq />
       </div>
-      <Footer />
+      <div className="max-w-7xl mx-auto">
+        <Footer />
+      </div>
     </main >
 
   )
