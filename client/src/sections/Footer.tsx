@@ -18,16 +18,16 @@ const Footer = () => {
         <div className="flex justify-between bg-foreground text-white p-8 rounded-2xl">
           <div className="space-y-8">
             <div className="flex items-end gap-2">
-              <img src={logofooter} alt="Cisco Patch white logo" className="h-9" />
-              <span className="font-bold roboto text-lg translate-y-1.75">CiscoPatch</span>
+              <img src={logofooter} alt="Cisco Patch white logo" className="h-7 lg:h-9" />
+              <span className="font-bold roboto lg:text-lg translate-y-1.75">CiscoPatch</span>
             </div>
-            <div className="font-semibold text-secondary">
+            <div className="font-semibold text-secondary text-sm lg:text-base">
               <span className="block">Seamless Repairs.</span>
               <span>Lasting Walls.</span>
             </div>
           </div>
           <div className="flex">
-            <div className="w-60 flex flex-wrap justify-between items-center px-8 py-4 gap-4 border-l border-r border-white">
+            <div className="w-60 flex flex-wrap justify-between items-center px-8 py-4 gap-4 border-l border-r border-muted">
               {links.map(({ link, label }, index) => (
                 <a key={index} href={link} className={`${index === 3 ? "mr-4" : ""}`}>{label}</a>
               ))}
@@ -35,13 +35,13 @@ const Footer = () => {
             <div className="flex flex-col justify-end space-y-8 pl-8">
               <div className="flex justify-center gap-4">
                 {icons.map((Icon, index) => (
-                  <div className="p-2 rounded-full border-2 ">
+                  <div className="p-2 rounded-full border border-muted cursor-pointer ">
                     <Icon key={index} />
                   </div>
                 ))}
               </div>
 
-              <span className="text-muted text-xs">@ 2026 CiscoPatch. All rights reserved.</span>
+              <span className="text-secondary text-xs">@ 2026 CiscoPatch. All rights reserved.</span>
             </div>
           </div>
         </div>
