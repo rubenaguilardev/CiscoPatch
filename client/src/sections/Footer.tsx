@@ -1,4 +1,6 @@
 import logofooter from "../assets/header/logo-footer.svg"
+import { Mail, Phone } from "lucide-react"
+import GoogleIcon from "../components/icons/GoogleIcon"
 
 const links = [
   { label: 'Services', link: '#services' },
@@ -6,6 +8,8 @@ const links = [
   { label: 'Results', link: '#results' },
   { label: 'FAQ', link: '#faq' },
 ]
+
+const icons = [GoogleIcon, Mail, Phone]
 
 const Footer = () => {
   return (
@@ -28,7 +32,15 @@ const Footer = () => {
                 <a key={index} href={link} className={`${index === 3 ? "mr-4" : ""}`}>{label}</a>
               ))}
             </div>
-            <div className="pl-8">
+            <div className="flex flex-col justify-end space-y-8 pl-8">
+              <div className="flex justify-center gap-4">
+                {icons.map((Icon, index) => (
+                  <div className="p-2 rounded-full border-2 ">
+                    <Icon key={index} />
+                  </div>
+                ))}
+              </div>
+
               <span className="text-muted text-xs">@ 2026 CiscoPatch. All rights reserved.</span>
             </div>
           </div>
