@@ -4,6 +4,7 @@ import Services from "./sections/Services"
 import About from "./sections/About"
 import Faq from "./sections/faq/Faq"
 import Results from "./sections/Results"
+import Footer from "./sections/Footer"
 
 
 const App = () => {
@@ -28,6 +29,9 @@ const App = () => {
       </div>
       <div className="max-w-7xl mx-auto">
         <Faq />
+      </div>
+      <div className="max-w-7xl mx-auto">
+        <Footer />
       </div>
     </main >
 
