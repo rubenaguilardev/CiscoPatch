@@ -9,7 +9,11 @@ const links = [
   { label: 'FAQ', link: '#faq' },
 ]
 
-const icons = [GoogleIcon, Mail, Phone]
+const icons = [
+  { icon: GoogleIcon, link: "" },
+  { icon: Mail, link: "mailto:#" },
+  { icon: Phone, link: "#" },
+]
 
 const Footer = () => {
   return (
@@ -34,14 +38,14 @@ const Footer = () => {
             </div>
             <div className="flex flex-col justify-end space-y-6 lg:space-y-8 md:pl-6 lg:pl-8">
               <div className="flex justify-center gap-3 lg:gap-4">
-                {icons.map((Icon, index) => (
+                {icons.map(({ icon: Icon, link }, index) => (
                   <div className="p-2 rounded-full border border-muted cursor-pointer ">
-                    <Icon key={index} className="md:h-5 md:w-5 lg:h-6 lg:w-6" />
+                    <a href={link}><Icon key={index} className="md:h-5 md:w-5 lg:h-6 lg:w-6" /></a>
                   </div>
                 ))}
               </div>
 
-              <span className="text-secondary text-[.625rem] text-center lg:text-xs">@ 2026 CiscoPatch. All rights reserved.</span>
+              <span className="text-secondary text-[.625rem] text-center lg:text-xs">@ {new Date().getFullYear()} CiscoPatch. All rights reserved.</span>
             </div>
           </div>
         </div>
