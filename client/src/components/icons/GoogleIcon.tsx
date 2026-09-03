@@ -1,4 +1,5 @@
-import { forwardRef, SVGProps } from "react";
+import { forwardRef } from "react"
+import type { SVGProps } from "react"
 
 interface GoogleIconProps extends SVGProps<SVGSVGElement> {
   size?: number | string;
