@@ -17,10 +17,11 @@ const Hero = () => {
               </p>
             </div>
             <div className="slide-in-from-bottom animate-in duration-700 delay-300">
-              <Button size='lg' className="group bg-primary shadow-2xl shadow-primary/25 hover:scale-102 transition-all duration-300">
+              <a href="#contact"><Button size='lg' className="group bg-primary shadow-2xl shadow-primary/25 hover:scale-102 transition-all duration-300">
                 Get a Free Estimate
                 <ArrowBigRight className="w-4 h-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
               </Button>
+              </a>
             </div>
             <p className="max-w-lg text-muted roboto text-lg lg:text-xl font-bold leading-relaxed animate-in slide-in-from-bottom duration-700 delay-400">
               Serving Inland Empire & LA County   |   Fast & Reliable Service  |  Clean Worksite, Every Job

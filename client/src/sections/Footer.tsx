@@ -18,7 +18,7 @@ const icons = [
 const Footer = () => {
   return (
     <footer className="w-full overflow-hidden">
-      <div className="container mx-auto px-4 md:px-6 pt-32 pb-8 ">
+      <div className="container mx-auto px-4 md:px-6 pt-32 pb-4 md:pb-8">
         <div className="flex flex-col md:flex-row justify-between space-y-6 md:space-y-0 bg-foreground text-white p-6 lg:p-8 rounded-2xl">
           <div className="space-y-6 lg:space-y-8">
             <div className="flex justify-center items-end gap-2">
