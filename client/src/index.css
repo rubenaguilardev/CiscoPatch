@@ -29,6 +29,10 @@ h4 {
   font-family: 'Roboto', sans-serif;
 }
 
+input {
+  border: 1px solid black;
+}
+
 .roboto {
   font-family: 'Roboto', sans-serif;
 }
