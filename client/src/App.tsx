@@ -15,7 +15,7 @@ const App = () => {
       <div className="max-w-7xl mx-auto">
         <Header />
       </div>
-      <div >
+      <div className="bg-[url('/hero-bg.png')] bg-cover bg-center">
         <div className="max-w-7xl mx-auto">
           <Hero />
         </div>
@@ -44,5 +44,3 @@ const App = () => {
 }
 
 export default App
-
-// className="bg-[url('/hero-bg.png')] bg-cover bg-center"
