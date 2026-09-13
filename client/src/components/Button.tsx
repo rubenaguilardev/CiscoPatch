@@ -8,7 +8,7 @@ type Button = {
 
 const Button = ({ className = '', size = 'default', children }: Button) => {
 
-  const baseClasses = 'relative overflow-hidden rounded-lg font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary text-white cursor-pointer'
+  const baseClasses = 'relative overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-white hover:bg-primary/90 cursor-pointer shadow-lg shadow-primary/25'
 
   const sizeClasses = {
     sm: 'px-4 py-2 text-sm',

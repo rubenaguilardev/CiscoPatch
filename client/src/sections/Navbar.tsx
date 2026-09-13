@@ -1,5 +1,6 @@
 import logo from '../assets/header/logo.png'
 import { Menu, X, Paintbrush, HardHat, Image, BadgeQuestionMark } from 'lucide-react'
+import Button from '../components/Button'
 
 const navLinks = [
   { href: '#services', label: 'Services', icon: Paintbrush },
@@ -11,7 +12,7 @@ const navLinks = [
 const Navbar = () => {
 
   const navElements = navLinks.map(({ href, label }) => (
-    <a key={label} href={href} className="font-medium text-muted hover:text-foreground text-sm lg:text-base">
+    <a key={label} href={href} className="px-4  py-2 text-sm text-secondary hover:text-white rounded-full hover:bg-muted">
       {label}
     </a>
   ))
@@ -27,11 +28,14 @@ const Navbar = () => {
             </span>
           </a>
         </div>
-        <div>
-          <div>
+
+        <div className='flex items-center gap-1'>
+          <div className='bg-foreground rounded-full px-2 py-1 flex items-center gap-1'>
             {navElements}
           </div>
         </div>
+
+        <div><Button>Contact Us</Button></div>
       </nav>
     </header>
   )
