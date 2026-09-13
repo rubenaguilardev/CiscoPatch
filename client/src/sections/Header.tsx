@@ -21,15 +21,7 @@ const Header = () => {
           <span className='self-end text-lg roboto sm:text-xl md:text-[1.25rem] translate-y-0.5 font-bold leading-none'>CiscoPatch</span>
         </a>
         <div className='hidden md:flex items-center space-x-6'>
-          {navLinks.map(({ href, label }) => (
-            <a
-              key={label}
-              href={href}
-              className='font-medium text-muted hover:text-foreground text-sm lg:text-base'
-            >
-              {label}
-            </a>
-          ))}
+
           <Button size='sm' className='bg-foreground hover:bg-foreground/90 shadow-lg shadow-foreground/25 '>Contact Today</Button>
         </div>
         <button
