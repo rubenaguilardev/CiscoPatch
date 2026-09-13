@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={"/hero-bg.png"} alt="" className="w-full h-full object-cover opacity-85 xl:opacity-75" />
+        <img src={"/hero-bg.avif"} alt="" className="w-full h-full object-cover opacity-85 xl:opacity-75" />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 pt-32 pb-20 relative z-10">
@@ -14,7 +14,7 @@ const Hero = () => {
 
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-in slide-in-from-bottom">
+              <h1 className="text-5xl lg:text-6xl font-bold leading-tight animate-in slide-in-from-bottom">
                 Expert Drywall Repairs, Done Right the First Time
               </h1>
               <p className="text-lg text-muted max-w-lg leading-relaxed animate-in slide-in-from-bottom duration-700 delay-100">
