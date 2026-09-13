@@ -31,7 +31,7 @@ const Hero = () => {
               Serving Inland Empire & LA County   <span className="te">|</span>   Fast & Reliable Service   <span className="te">|</span>   Clean Worksite, Every Job
             </p>
           </div>
-          <div className="relative slide-in-from-right animate-in duration-700 delay-500 mt-20 md:mt-0">
+          <div className="relative slide-in-from-right animate-in duration-700 delay-500 mt-12 md:mt-0">
             <div className="relative max-w-lg mx-auto">
               <img
                 src={heroImg}
