@@ -1,7 +1,7 @@
 import logo from '../assets/header/logo.png'
 import { Menu, X, Paintbrush, HardHat, Image, BadgeQuestionMark } from 'lucide-react'
 import Button from '../components/Button'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const navLinks = [
   { href: '#services', label: 'Services', icon: Paintbrush },
@@ -14,8 +14,20 @@ const Navbar = () => {
 
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false)
 
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <header className="fixed top-0 left-0 right-0 py-5 bg-white z-50">
+    <header className={`fixed top-0 left-0 right-0 py-5 bg-white z-50 ${isScrolled ? "border-b border-foreground/15" : ""}`}>
       < nav className="container mx-auto px-6 flex items-center justify-between" >
         <div onClick={() => setMobileMenuIsOpen(false)} className="hover:text-primary">
           <a href="#" className='flex gap-1'>
@@ -53,7 +65,7 @@ const Navbar = () => {
       </nav >
 
       {mobileMenuIsOpen &&
-        <div className='md:hidden bg-foreground animate-in slide-in-from-top duration-300 pb-2 mt-5'>
+        <div className='md:hidden bg-foreground animate-in slide-in-from-top duration-300 pb-2 mt-5 mx-4 rounded-xl'>
           <div className='container flex flex-col gap-4 mx-auto px-6 py-6'>
             {navLinks.map(({ href, label, icon: Icon }) => (
               <a
