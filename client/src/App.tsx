@@ -8,19 +8,14 @@ import Contact from "./sections/Contact"
 import Footer from "./sections/Footer"
 
 
-
-
 const App = () => {
   return (
     <div className="min-h-screen overflow-hidden ">
       <Navbar />
       <main>
         <Hero />
+        <Services />
 
-
-        <div className="max-w-7xl mx-auto">
-          <Services />
-        </div>
         <div className="max-w-7xl mx-auto">
           <About />
         </div>
