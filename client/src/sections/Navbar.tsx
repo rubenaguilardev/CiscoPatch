@@ -27,7 +27,7 @@ const Navbar = () => {
   }, [])
 
   return (
-    <header className={`fixed top-0 left-0 right-0 py-5 bg-white z-50 ${isScrolled ? "border-b border-foreground/15" : ""}`}>
+    <header className={`fixed top-0 left-0 right-0 py-5 bg-white z-50 ${isScrolled ? "shadow-lg" : ""}`}>
       < nav className="container mx-auto px-6 flex items-center justify-between" >
         <div onClick={() => setMobileMenuIsOpen(false)} className="hover:text-primary">
           <a href="#" className='flex gap-1'>
