@@ -1,5 +1,5 @@
 import logo from '../assets/header/logo.png'
-import { Menu, X, Paintbrush, HardHat, Image, BadgeQuestionMark, DivideIcon } from 'lucide-react'
+import { Menu, X, Paintbrush, HardHat, Image, BadgeQuestionMark } from 'lucide-react'
 import Button from '../components/Button'
 import { useState } from 'react'
 

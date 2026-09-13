@@ -1,4 +1,3 @@
-// import Header from "./sections/Header"
 import Navbar from "./sections/Navbar"
 import Hero from "./sections/Hero"
 import Services from "./sections/Services"
