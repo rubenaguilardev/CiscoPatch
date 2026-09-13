@@ -1,14 +1,15 @@
 import type { ReactNode } from "react"
 
 type Button = {
-  className: string
-  size: 'sm' | 'default' | 'lg'
+  className?: string
+  size?: 'sm' | 'default' | 'lg'
   children: ReactNode
+  close?: () => void
 }
 
-const Button = ({ className = '', size = 'default', children }: Button) => {
+const Button = ({ className = '', size = 'default', children, close }: Button) => {
 
-  const baseClasses = 'relative overflow-hidden rounded-lg font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary text-white cursor-pointer'
+  const baseClasses = 'relative overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-white hover:bg-primary/90 cursor-pointer shadow-lg shadow-primary/25'
 
   const sizeClasses = {
     sm: 'px-4 py-2 text-sm',
@@ -19,7 +20,7 @@ const Button = ({ className = '', size = 'default', children }: Button) => {
   const classes = `${baseClasses} ${sizeClasses[size]} ${className}`
 
   return (
-    <button className={classes}>
+    <button className={classes} onClick={close}>
       <span className="relative flex items-center justify-center gap-2">{children}</span>
     </button >
   )
