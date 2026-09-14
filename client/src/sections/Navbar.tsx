@@ -1,9 +1,15 @@
 import logo from '../assets/header/logo.png'
-import { Menu, X, Paintbrush, HardHat, Image, BadgeQuestionMark } from 'lucide-react'
+import { Menu, X, Paintbrush, HardHat, Image, BadgeQuestionMark, type LucideIcon } from 'lucide-react'
 import Button from '../components/Button'
 import { useState, useEffect } from 'react'
 
-const navLinks = [
+type NavLink = {
+  href: string
+  label: string
+  icon: LucideIcon
+}
+
+const navLinks: NavLink[] = [
   { href: '#services', label: 'Services', icon: Paintbrush },
   { href: '#about', label: 'About', icon: HardHat },
   { href: '#results', label: 'Results', icon: Image },
@@ -82,7 +88,7 @@ const Navbar = () => {
             ))}
             <div className=''>
               <a href="#contact" className='block'>
-                <Button close={() => setMobileMenuIsOpen(false)} size='sm' className='w-full bg-primary hover:bg-primary/90'>Contact Today</Button>
+                <Button onClick={() => setMobileMenuIsOpen(false)} size='sm' className='w-full bg-primary hover:bg-primary/90'>Contact Today</Button>
               </a>
             </div>
           </div>

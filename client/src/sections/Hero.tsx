@@ -1,12 +1,13 @@
 import { ArrowRight } from "lucide-react"
 import heroImg from '../assets/hero/hero-img.avif'
 import Button from "../components/Button"
+import heroBg from '../assets/hero/hero-bg.avif'
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={"/hero-bg.avif"} alt="" className="w-full h-full object-cover opacity-85 xl:opacity-75" />
+        <img src={heroBg} alt="image of white walls" className="w-full h-full object-cover opacity-85 xl:opacity-75" />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 pt-32 pb-20 relative z-10">

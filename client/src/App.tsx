@@ -28,9 +28,9 @@ const App = () => {
         <div className="max-w-7xl mx-auto">
           <Contact />
         </div>
-        <div className="max-w-7xl mx-auto">
-          <Footer />
-        </div>
+
+        <Footer />
+
       </main >
     </div >
 
