@@ -1,7 +1,27 @@
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, BroomSparkles, ChevronsRight, MapPin, type LucideIcon } from "lucide-react"
 import heroImg from '../assets/hero/hero-img.avif'
 import Button from "../components/Button"
 import heroBg from '../assets/hero/hero-bg.avif'
+
+type feature = {
+  text: string
+  icon: LucideIcon
+}
+
+const features: feature[] = [
+  {
+    text: "Clean Worksite, Every Job",
+    icon: BroomSparkles
+  },
+  {
+    text: "Fast & Reliable Service ",
+    icon: ChevronsRight
+  },
+  {
+    text: "Serving Inland Empire & LA County",
+    icon: MapPin
+  }
+]
 
 const Hero = () => {
   return (
@@ -28,9 +48,14 @@ const Hero = () => {
               </Button>
               </a>
             </div>
-            <p className="max-w-lg text-muted roboto text-lg lg:text-xl font-semibold leading-relaxed animate-in slide-in-from-bottom duration-700 delay-400">
-              Serving Inland Empire & LA County   <span className="te">|</span>   Fast & Reliable Service   <span className="te">|</span>   Clean Worksite, Every Job
-            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 text-muted roboto text-lg lg:text-xl font-semibold space-y-2 xl:space-y-4 animate-in slide-in-from-bottom duration-700 delay-400">
+              {features.map(({ text, icon: Icon }, index) => (
+                <div key={index} className={`flex items-center gap-2 ${index === 2 ? "xl:col-span-2" : ""}`}>
+                  <Icon className="w-7 h-7" />
+                  <p>{text}</p>
+                </div>
+              ))}
+            </div>
           </div>
           <div className="relative slide-in-from-right animate-in duration-700 delay-500 mt-12 md:mt-0">
             <div className="relative max-w-lg mx-auto">
