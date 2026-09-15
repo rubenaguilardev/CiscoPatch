@@ -10,12 +10,12 @@ type feature = {
 
 const features: feature[] = [
   {
-    text: "Clean Worksite, Every Job",
-    icon: BroomSparkles
-  },
-  {
     text: "Fast & Reliable Service ",
     icon: ChevronsRight
+  },
+  {
+    text: "Clean Worksite, Every Job",
+    icon: BroomSparkles
   },
   {
     text: "Serving Inland Empire & LA County",

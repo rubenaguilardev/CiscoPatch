@@ -1,4 +1,5 @@
 import aboutImg from '../assets/about/about1-img.jpg'
+import aboutBg from "../assets/about/aboutBg.avif"
 
 type AboutText = {
   heading: string
@@ -22,8 +23,11 @@ const aboutData: AboutText[] = [
 
 const About = () => {
   return (
-    <section id='about' className="py-24 lg:py-32 overflow-hidden">
-      <h2 className="lg:hidden text-3xl lg:text-4xl text-center mb-6 font-bold text-foreground">
+    <section id='about' className="relative py-24 lg:py-32 overflow-hidden">
+      <div className="absolute inset-0">
+        <img src={aboutBg} alt="image of white walls" className="w-full h-full object-cover opacity-85 xl:opacity-75" />
+      </div>
+      <h2 className="lg:hidden relative z-10 text-3xl lg:text-4xl text-center mb-6 font-bold text-foreground">
         Why Choose Us
       </h2>
       <div className="container mx-auto lg:grid grid-cols-2 items-center lg:gap-16  px-4 md:px-6 relative space-y-6 lg:space-y-0 z-10">
