@@ -19,8 +19,8 @@ const Faq = () => {
       <div className="container space-y-4 mx-auto px-4 md:px-6 relative">
         <div className="bg-foreground p-8 rounded-2xl lg:bg-[url('/faq-bg.png')] bg-no-repeat bg-bottom-right lg:bg-size-[350px_145px] xl:bg-auto">
           <div className="flex flex-col gap-4">
-            <h2 className="text-xl xl:text-3xl font-bold uppercase text-primary tracking-wide leading-none">
-              Frequently asked questions
+            <h2 className="text-xl xl:text-3xl font-bold  text-white tracking-wide leading-none">
+              Frequently Asked Questions
             </h2>
             <p className="max-w-130 lg:text-lg pb-8 md:pb-0 text-secondary font-medium leading-normal">
               Have more questions? Reach out to our team or submit an estimation request.
