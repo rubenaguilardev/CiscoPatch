@@ -18,7 +18,7 @@ const Faq = () => {
   return (
     <section id='faq' className="py-16 md:py-24 lg:py-32 overflow-hidden w-full">
       <div className="container space-y-4 mx-auto px-4 md:px-6 relative">
-        <div className="bg-foreground p-8 rounded-2xl lg:bg-[url('/faq-bg.png')] bg-no-repeat bg-bottom-right">
+        <div className="bg-foreground p-8 rounded-2xl lg:bg-[url('/faq-bg.png')] bg-no-repeat bg-bottom-right lg:bg-size-[350px_150px] xl:bg-auto">
           <div className="flex flex-col gap-4">
             <h2 className="text-xl xl:text-3xl font-bold uppercase text-primary tracking-wide leading-none">
               Frequently asked questions
@@ -27,7 +27,7 @@ const Faq = () => {
               Have more questions? Reach out to our team or submit an estimation request.
             </p>
           </div>
-          <button className='absolute top-[73%] md:top-[58%] left-[54%] md:left-[55%] text-white text-xs lg:text-sm font-bold bg-primary rounded-full py-10 px-2.25 xl:py-12 xl:px-4 border-12 md:border-14 border-white cursor-pointer hover:bg-[#cc411f]'>
+          <button className='absolute top-[67%] md:top-[58%] left-[65%] md:left-[72%] lg:left-[58%] text-white text-xs lg:text-sm font-bold bg-primary rounded-full py-10 px-2.25 xl:py-12 xl:px-4 border-12 md:border-14 border-white cursor-pointer hover:bg-[#cc411f]'>
             Get Estimate
           </button>
         </div>
