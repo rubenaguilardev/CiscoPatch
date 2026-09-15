@@ -15,10 +15,8 @@ const App = () => {
       <main>
         <Hero />
         <Services />
+        <About />
 
-        <div className="max-w-7xl mx-auto">
-          <About />
-        </div>
         <div className="max-w-7xl mx-auto">
           <Results />
         </div>

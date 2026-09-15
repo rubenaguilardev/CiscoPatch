@@ -15,7 +15,7 @@ const SLIDES = [
 
 const Results = () => {
   return (
-    <section id="results" className='container space-y-4 mx-auto px-4 md:px-6'>
+    <section id="results" className='py-24 lg:py-32 overflow-hidden'>
       <EmblaCarousel slides={SLIDES} options={OPTIONS} />
     </section>
   )

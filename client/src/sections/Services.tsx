@@ -34,7 +34,7 @@ const Services = () => {
   return (
     <section id="services" className="py-24 lg:py-32 overflow-hidden">
       <div className="container space-y-4 mx-auto px-4 md:px-6">
-        <h2 className='text-3xl md:text-4xl font-bold leading-tight animate-in animation-delay-100'>Services We Provide</h2>
+        <h2 className='text-3xl lg:text-4xl font-bold leading-tight animate-in animation-delay-100 text-center lg:text-start'>Services We Provide</h2>
         <div className="grid lg:grid-cols-[1fr_1fr_1.2fr] gap-4">
           {services.slice(0, 2).map(({ icon, heading, paragraph }) => (
             <div key={heading} className="space-y-8 bg-foreground p-8 rounded-2xl">

@@ -1,6 +1,11 @@
 import aboutImg from '../assets/about/about1-img.jpg'
 
-const aboutData = [
+type AboutText = {
+  heading: string
+  paragraph: string
+}
+
+const aboutData: AboutText[] = [
   {
     heading: 'Our Experience',
     paragraph: 'Years of hands on experience in the trade means we know drywall repair inside and out, from small patches to full wall restorations.'
@@ -17,9 +22,9 @@ const aboutData = [
 
 const About = () => {
   return (
-    <section id='about' className="w-full overflow-hidden py-16 md:py-24 lg:py-32">
-      <h2 className="lg:hidden text-2xl xl:text-3xl text-center mb-6 font-medium uppercase text-primary tracking-wide">
-        why choose us
+    <section id='about' className="py-24 lg:py-32 overflow-hidden">
+      <h2 className="lg:hidden text-3xl lg:text-4xl text-center mb-6 font-bold text-foreground">
+        Why Choose Us
       </h2>
       <div className="container mx-auto lg:grid grid-cols-2 items-center lg:gap-16  px-4 md:px-6 relative space-y-6 lg:space-y-0 z-10">
         <div className="relative slide-in-from-left animate-in duration-700 delay-500">
@@ -27,14 +32,14 @@ const About = () => {
             <img
               src={aboutImg}
               alt="remodeled hallway in a home"
-              className="w-full aspect-4/5 object-cover rounded-2xl shadow-xl" />
+              className="w-full aspect-3/4 object-cover rounded-2xl shadow-xl" />
           </div>
         </div>
         <div className='space-y-6 lg:space-y-8'>
-          <h2 className="hidden lg:block text-2xl xl:text-3xl font-medium uppercase text-primary tracking-wide">
-            why choose us
+          <h2 className="hidden lg:block text-3xl xl:text-4xl font-bold text-foreground">
+            Why Choose Us
           </h2>
-          <h3 className='text-xl lg:text-2xl font-medium'>
+          <h3 className='text-xl lg:text-2xl font-bold text-muted'>
             Craftsmanship built over years of doing the work. Results that show in every repair.
           </h3>
           {aboutData.map(({ heading, paragraph }) => (
