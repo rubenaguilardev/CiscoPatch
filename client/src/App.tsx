@@ -17,12 +17,12 @@ const App = () => {
         <Services />
         <About />
 
-        <div className="max-w-7xl mx-auto">
-          <Results />
-        </div>
-        <div className="max-w-7xl mx-auto">
-          <Faq />
-        </div>
+
+        <Results />
+
+
+        <Faq />
+
         <div className="max-w-7xl mx-auto">
           <Contact />
         </div>

@@ -26,9 +26,11 @@ const Faq = () => {
               Have more questions? Reach out to our team or submit an estimation request.
             </p>
           </div>
-          <button className='absolute top-[75%] md:top-[58%] left-[55%] md:left-[72%] lg:left-[58%] text-white text-xs lg:text-sm font-bold bg-primary rounded-full py-9 px-2 lg:py-10 lg:px-2. xl:py-12 xl:px-4 border-10 md:border-12 log:border-14 border-white cursor-pointer hover:bg-[#cc411f]'>
-            Get Estimate
-          </button>
+          <a href="#contact">
+            <button className='absolute top-[75%] md:top-[58%] left-[55%] md:left-[72%] lg:left-[58%] text-white text-xs lg:text-sm font-bold bg-primary rounded-full py-9 px-2 lg:py-10 lg:px-2. xl:py-12 xl:px-4 border-10 md:border-12 log:border-14 border-white cursor-pointer hover:bg-[#cc411f]'>
+              Get Estimate
+            </button>
+          </a>
         </div>
 
       </div>

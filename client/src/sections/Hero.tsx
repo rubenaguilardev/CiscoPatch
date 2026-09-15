@@ -34,7 +34,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight animate-in slide-in-from-bottom">
+              <h1 className="text-5xl lg:text-6xl font-bold leading-tight animate-in slide-in-from-bottom duration-700">
                 Expert Drywall Repairs, Done Right the First Time
               </h1>
               <p className="text-lg text-muted font-medium max-w-lg leading-relaxed animate-in slide-in-from-bottom duration-700 delay-100">
