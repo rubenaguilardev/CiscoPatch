@@ -50,7 +50,7 @@ const Accordion = ({ question, answer, category, id, isOpen, onToggle, hideBorde
       <div className={`grid overflow-hidden transitiona-all duration-300 ease-in-out text-sm bg-[#4D2C24]
       ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}
     `}>
-        <div className={`${isOpen ? 'md:max-w-3xl pb-6 px-6 md:px-8 text-sm text-secondary font-medium' : 'hidden'}`}>{answer}</div>
+        <div className={`${isOpen ? 'md:max-w-3xl pb-6 px-6 md:px-8 text-sm text-secondary font-medium' : 'hidden'} ${isLastInCategory ? "pt-6" : ""}`}>{answer}</div>
       </div>
     </div>
   )
