@@ -51,7 +51,7 @@ const Faq = () => {
           {labels.map((label, index) => (
             <div
               key={index}
-              onClick={() => setActiveLabel(label)}
+              onClick={() => handleLabelChange(label)}
               className={`flex justify-center items-center py-1.5 px-2.5 md:px-10 rounded-t-xl text-sm regular-res md:text-base lg:text-lg font-bold $ ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary md:hover:bg-muted/90"} transition-colors duration-250 ease-in-out cursor-pointer`}
             >
               {label}
