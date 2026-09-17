@@ -27,10 +27,7 @@ const About = () => {
       <div className="absolute inset-0">
         <img src={aboutBg} alt="image of white walls" className="w-full h-full object-cover opacity-85 xl:opacity-75" />
       </div>
-      <h2 className="lg:hidden relative z-10 text-3xl lg:text-4xl text-center mb-6 font-bold text-foreground">
-        Why Choose Us
-      </h2>
-      <div className="container mx-auto lg:grid grid-cols-2 items-center lg:gap-16  px-4 md:px-6 relative space-y-6 lg:space-y-0 z-10">
+      <div className="container mx-auto lg:grid grid-cols-2 items-center lg:gap-16 px-4 md:px-6 relative space-y-8 lg:space-y-0 z-10">
         <div className="relative slide-in-from-left animate-in duration-700 delay-500">
           <div className="relative max-w-md mx-auto">
             <img
@@ -40,7 +37,7 @@ const About = () => {
           </div>
         </div>
         <div className='space-y-6 lg:space-y-8'>
-          <h2 className="hidden lg:block text-3xl xl:text-4xl font-bold text-foreground">
+          <h2 className="lg:block text-3xl xl:text-4xl font-bold text-foreground">
             Why Choose Us
           </h2>
           <h3 className='text-xl lg:text-2xl font-bold text-muted'>

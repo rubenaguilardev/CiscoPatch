@@ -16,22 +16,12 @@ const App = () => {
         <Hero />
         <Services />
         <About />
-
-
         <Results />
-
-
         <Faq />
-
-        <div className="max-w-7xl mx-auto">
-          <Contact />
-        </div>
-
+        <Contact />
         <Footer />
-
       </main >
     </div >
-
   )
 }
 

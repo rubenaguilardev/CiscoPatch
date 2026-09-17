@@ -34,7 +34,7 @@ const Services = () => {
   return (
     <section id="services" className="py-24 lg:py-32 overflow-hidden">
       <div className="container space-y-4 mx-auto px-4 md:px-6">
-        <h2 className='text-3xl lg:text-4xl font-bold leading-tight animate-in animation-delay-100 text-center lg:text-start'>Services We Provide</h2>
+        <h2 className='text-3xl lg:text-4xl font-bold leading-tight animate-in animation-delay-100 lg:text-start'>Services We Provide</h2>
         <div className="grid lg:grid-cols-[1fr_1fr_1.2fr] gap-4">
           {services.slice(0, 2).map(({ icon, heading, paragraph }) => (
             <div key={heading} className="space-y-8 bg-foreground p-8 rounded-2xl">
@@ -55,7 +55,7 @@ const Services = () => {
               <img src={bluewall} alt="" className='w-full h-full object-cover object-right lg:object-center' />
             </div>
             <a href="#results">
-              <button className='absolute -bottom-16 md:-bottom-18 right-15 text-white text-xs lg:text-sm font-bold bg-primary rounded-full py-9 px-2 lg:py-10 lg:px-2. xl:py-12 xl:px-4 border-10 md:border-12 log:border-14 border-white hover:bg-primary/95 cursor-pointer'>View Results</button>
+              <button className='absolute -bottom-16 md:-bottom-18 right-15 text-white text-xs lg:text-sm font-bold bg-primary rounded-full py-10 px-2.5 lg:py-10 lg:px-2. xl:py-12 xl:px-4 border-10 md:border-12 log:border-14 border-white hover:bg-primary/95 cursor-pointer'>View Results</button>
             </a>
           </div>
           <div className='space-y-8 bg-foreground p-8 rounded-2xl'>

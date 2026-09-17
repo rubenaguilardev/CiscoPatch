@@ -45,7 +45,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-1">
-          <div className='bg-foreground rounded-full flex items-center gap-1 py-3 px-2'>
+          <div className='bg-foreground rounded-full flex items-center gap-1 py-3.5 px-2'>
             {navLinks.map(({ href, label }) => (
               <a
                 key={label}
