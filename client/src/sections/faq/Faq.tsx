@@ -72,17 +72,23 @@ const Faq = () => {
             </div>
           </div>
 
-          {filteredQuestions.map(({ question, answer, category, id }, index) => (
-            <Accordion
-              key={id}
-              question={question}
-              answer={answer}
-              category={category}
-              id={id}
-              isOpen={openId === id}
-              onToggle={() => handleToggle(id)}
-            />
-          ))}
+          {filteredQuestions.map(({ question, answer, category, id }, index) => {
+            const nextItem = filteredQuestions[index + 1]
+            const hideBorder = openId === id || openId === nextItem?.id
+
+            return (
+              <Accordion
+                key={id}
+                question={question}
+                answer={answer}
+                category={category}
+                id={id}
+                isOpen={openId === id}
+                onToggle={() => handleToggle(id)}
+                hideBorder={hideBorder}
+              />
+            )
+          })}
         </div>
       </div>
     </section >
