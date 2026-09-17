@@ -3,7 +3,9 @@ import { questions, headings } from "./data.ts"
 import { useState } from "react"
 
 
-const labels = ['General', 'Time', 'Repair', 'Cost']
+type Label = string
+
+const labels: Label[] = ['General', 'Time', 'Repair', 'Cost']
 
 
 const Faq = () => {
@@ -35,12 +37,12 @@ const Faq = () => {
 
       </div>
       <div className="container space-y-4 mx-auto md:px-6 relative">
-        <div className="flex justify-center gap-1 mt-24 md:mt-32">
+        <div className="flex justify-center mt-24 md:mt-32">
           {labels.map((label, index) => (
             <div
               key={index}
               onClick={() => setActiveLabel(label)}
-              className={`flex justify-center items-center py-1.75 px-4 md:px-10 rounded-t-2xl md:text-lg font-bold $ ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary md:hover:bg-muted/90"} transition-colors duration-250 ease-in-out cursor-pointer`}
+              className={`flex justify-center items-center py-1.5 px-2.5 md:px-10 rounded-t-xl md:rounded-t-2xl text-sm regular-res md:text-base lg:text-lg font-bold $ ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary md:hover:bg-muted/90"} transition-colors duration-250 ease-in-out cursor-pointer`}
             >
               {label}
             </div>
@@ -52,10 +54,10 @@ const Faq = () => {
         <div className="max-w-206 mx-auto py-8 flex flex-col text-white bg-foreground rounded-2xl">
           <div className="flex items-center gap-3 mb-8 px-6 md:px-8">
             <div className="flex items-center gap-3">
-              <Icon className="w-8 h-8 text-primary" />
+              <Icon className="w-7 h-7 md:w-8 md:h-8 text-primary" />
               <div>
-                <h3 className="text-lg font-bold ">{heading.title}</h3>
-                <p className="font-bold text-sm text-secondary">{heading.subtitle}</p>
+                <h3 className="md:text-lg font-bold ">{heading.title}</h3>
+                <p className="font-bold text-xs md:text-sm text-secondary">{heading.subtitle}</p>
               </div>
             </div>
           </div>

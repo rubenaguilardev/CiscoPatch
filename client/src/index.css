@@ -37,6 +37,13 @@ input {
   font-family: 'Roboto', sans-serif;
 }
 
+@media (min-width: 360px) {
+  .regular-res {
+    font-size: 1rem;
+    padding: 6px 15px;
+  }
+}
+
 
 
 @layer utilities {
