@@ -37,7 +37,7 @@ const Faq = () => {
 
       </div>
       <div className="container space-y-4 mx-auto md:px-6 relative">
-        <div className="flex justify-center mt-24 md:mt-32">
+        <div className="flex justify-center md:gap-1 mt-24 md:mt-32">
           {labels.map((label, index) => (
             <div
               key={index}
