@@ -11,10 +11,20 @@ const labels: Label[] = ['General', 'Time', 'Repair', 'Cost']
 const Faq = () => {
 
   const [activeLabel, setActiveLabel] = useState("General")
+  const [openId, setOpenId] = useState<string | null>(null)
 
   const filteredQuestions = questions.filter(question => question.id.includes(activeLabel))
   const heading = headings.find(heading => heading.title === activeLabel) ?? headings[0]
   const Icon = heading.icon
+
+  const handleLabelChange = (label: string) => {
+    setActiveLabel(label)
+    setOpenId(null)
+  }
+
+  const handleToggle = (id: string) => {
+    setOpenId(prev => prev === id ? null : id)
+  }
 
   return (
     <section id='faq' className="py-16 md:py-24 lg:py-32 overflow-hidden w-full">
@@ -42,7 +52,7 @@ const Faq = () => {
             <div
               key={index}
               onClick={() => setActiveLabel(label)}
-              className={`flex justify-center items-center py-1.5 px-2.5 md:px-10 rounded-t-xl md:rounded-t-2xl text-sm regular-res md:text-base lg:text-lg font-bold $ ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary md:hover:bg-muted/90"} transition-colors duration-250 ease-in-out cursor-pointer`}
+              className={`flex justify-center items-center py-1.5 px-2.5 md:px-10 rounded-t-xl text-sm regular-res md:text-base lg:text-lg font-bold $ ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary md:hover:bg-muted/90"} transition-colors duration-250 ease-in-out cursor-pointer`}
             >
               {label}
             </div>
@@ -63,7 +73,15 @@ const Faq = () => {
           </div>
 
           {filteredQuestions.map(({ question, answer, category, id }, index) => (
-            <Accordion key={index} question={question} answer={answer} category={category} id={id} />
+            <Accordion
+              key={id}
+              question={question}
+              answer={answer}
+              category={category}
+              id={id}
+              isOpen={openId === id}
+              onToggle={() => handleToggle(id)}
+            />
           ))}
         </div>
       </div>
