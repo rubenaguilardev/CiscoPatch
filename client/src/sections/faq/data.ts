@@ -24,33 +24,34 @@ export const headings: headingItem[] = [
 
 
 export const questions: FaqItem[] = [
-  {
-    question: "Do I need to be home for an estimate?",
-    answer: "No, just upload a few photos of the damaged area through our online form, and we'll get you an estimate without needing to schedule an in-person visit.",
-    category: "General",
-    id: "General0"
-  },
+
   {
     question: "What areas do you serve?",
     answer: "We proudly serve the Inland Empire and LA County.",
     category: "General",
-    id: "General1"
+    id: "General0"
   },
   {
     question: "Do you work on commercial properties, or just homes?",
     answer: "Both. Whether it's a residential wall or a commercial space, we handle patching, repair, and restoration for either.",
     category: "General",
-    id: "General2"
+    id: "General1"
   },
   {
-    question: "Will you clean up after the repair is finished?",
-    answer: "Yes, we treat your home with respect. Once the repair is complete, we clean up all dust, debris, and materials, leaving the space as tidy as we found it.",
+    question: "Do I need to be home for an estimate?",
+    answer: "No, just upload a few photos of the damaged area through our online form, and we'll get you an estimate without needing to schedule an in-person visit.",
     category: "General",
-    id: "General3"
+    id: "General2"
   },
   {
     question: "Do I need to move furniture out of the room before you arrive?",
     answer: "Not necessarily. We can move small furniture and cover larger items to protect them from dust, but if you'd like to clear the area yourself beforehand, that's always welcome too.",
+    category: "General",
+    id: "General3"
+  },
+  {
+    question: "Will you clean up after the repair is finished?",
+    answer: "Yes, we treat your home with respect. Once the repair is complete, we clean up all dust, debris, and materials, leaving the space as tidy as we found it.",
     category: "General",
     id: "General4"
   },

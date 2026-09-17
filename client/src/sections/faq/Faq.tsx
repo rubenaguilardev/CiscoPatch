@@ -52,12 +52,12 @@ const Faq = () => {
       </div>
       <div className="container space-y-4 mx-auto px-4 md:px-6 relative">
         <div className="max-w-206 mx-auto py-8 flex flex-col text-white bg-foreground rounded-2xl">
-          <div className="flex items-center gap-3 mb-8 px-6 md:px-8">
+          <div className="flex items-center gap-3 mb-4 px-6 md:px-8">
             <div className="flex items-center gap-3">
               <Icon className="w-7 h-7 md:w-8 md:h-8 text-primary" />
               <div>
-                <h3 className="md:text-lg font-bold ">{heading.title}</h3>
-                <p className="font-bold text-xs md:text-sm text-secondary">{heading.subtitle}</p>
+                <h3 className="text-lg font-bold ">{heading.title}</h3>
+                <p className="font-bold text-sm md:text-sm text-secondary">{heading.subtitle}</p>
               </div>
             </div>
           </div>
