@@ -11,7 +11,7 @@ const links = [
 
 const icons = [
   { icon: GoogleIcon, link: "" },
-  { icon: Mail, link: "mailto:#" },
+  { icon: Mail, link: "mailto:info@ciscopatch.com" },
   { icon: Phone, link: "#" },
 ]
 
