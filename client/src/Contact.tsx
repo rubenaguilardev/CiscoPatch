@@ -1,6 +1,6 @@
 import { Mail, Phone, MapPin, ArrowUpRight, type LucideIcon } from "lucide-react"
 
-export type contactInfo = {
+type contactInfo = {
   icon: LucideIcon,
   label: string,
   info: string
@@ -12,11 +12,23 @@ const contacts: contactInfo[] = [
   { icon: MapPin, label: "Our location", info: "Riverside, CA"},
 ] 
 
+type Input = {
+  id: string
+  label: string
+  type: string
+  placeholder: string
+}
+
+const inputs: Input[] = [
+  { id: "firstName", label: "First Name", type: "text", placeholder: "John"},
+  { id: "lastName", label: "Last Name", type: "text", placeholder: "Doe"},
+]
+
 const Contact = () => {
   return (
     <section id="contact" className="py-32 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6 pt-32 pb-4 md:pb-8">
-        <div>
+        <div className="grid grid-cols-2">
           <div>
             <h2 className="text-[2rem] font-bold">Get a free estimate</h2>
             <div>
@@ -40,9 +52,26 @@ const Contact = () => {
               </div>
             </div>
           </div>
+     
+          <div>
+          <form>
+            <div className="flex">
+            {inputs.map(({id, label, type, placeholder}) => (
+              <div key={id} className="flex gap-4">
+                <div className="flex flex-col">
+                  <label htmlFor={id} />{label}
+                  <input type={type} id={id} name={id} placeholder={placeholder}  />
+                </div>
+              </div>
+            ))}
+            </div>
+            
+          
+          </form>
+          </div>
         </div>
-        <div></div>
-      </div>
+      </div> 
+      
     </section >
   )
 }
