@@ -7,6 +7,7 @@
   --color-foreground: #242424;
   --color-muted: #4b545d;
   --color-secondary: #adadad;
+  --color-light-border: #c8c8c8;
 }
 
 @layer base {
