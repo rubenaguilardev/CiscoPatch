@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, ArrowUpRight, type LucideIcon } from "lucide-react"
 import Button from "../components/Button"
+import contactBg from "../assets/contact/contact.jpg"
 
 
 type contactInfo = {
@@ -35,8 +36,11 @@ const inputs: Input[] = [
 const Contact = () => {
   return (
     <section id="contact" className="relative overflow-hidden">
-      <div className="container mx-auto px-4 md:px-6 pt-32 pb-4 md:pb-8">
-        <div className="grid lg:grid-cols-2 gap-8">
+      <div className="absolute inset-0">
+        <img src={contactBg} alt="image of white walls" className="w-full h-full object-cover opacity-40" />
+      </div>
+      <div className="relative container mx-auto px-4 md:px-6 pt-32 pb-4 md:pb-8 z-10">
+        <div className="grid lg:grid-cols-2 gap-8 border border-light-border p-8">
           <div className="hidden lg:flex flex-col justify-between lg:bg-[url('/contactbg.png')] bg-no-repeat bg-top-right">
             <h2 className="text-[2rem] font-bold">Get a Free Estimate</h2>
             <div>
@@ -73,7 +77,7 @@ const Contact = () => {
                       type={type} 
                       id={id} name={id} 
                       placeholder={placeholder} 
-                      className="py-2.5 px-4 rounded-lg bg-[#f5f5f5] placeholder:text-sm"
+                      className="py-2.5 px-4 rounded-lg bg-white placeholder:text-sm"
                     />
                   </div>
                 </div>
