@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, ArrowUpRight, type LucideIcon } from "lucide-react"
-import Button from "./components/Button"
+import Button from "../components/Button"
+
 
 type contactInfo = {
   icon: LucideIcon,
@@ -33,17 +34,17 @@ const inputs: Input[] = [
 
 const Contact = () => {
   return (
-    <section id="contact" className="overflow-hidden">
+    <section id="contact" className="relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-6 pt-32 pb-4 md:pb-8">
-        <div className="grid grid-cols-2 gap-8">
-          <div>
-            <h2 className="text-[2rem] font-bold">Get a free estimate</h2>
+        <div className="grid lg:grid-cols-2 gap-8">
+          <div className="hidden lg:flex flex-col justify-between lg:bg-[url('/contactbg.png')] bg-no-repeat bg-top-right">
+            <h2 className="text-[2rem] font-bold">Get a Free Estimate</h2>
             <div>
               <div className="grid gap-4">
                 {contacts.map(({icon: Icon, label, info}) => (
                   <div key={label} className="flex justify-between items-center bg-[#f5f5f5]  rounded-2xl p-4">
                     <div className="flex items-center gap-4">
-                      <div className="rounded-full p-2.5 border border-light-border ">
+                      <div className="rounded-full p-2.5">
                       {<Icon  className="h-6"/>}
                       </div>
                       <div className="">
@@ -61,13 +62,19 @@ const Contact = () => {
           </div>
      
           <div>
+            <h2 className="lg:hidden">Get Estimate</h2>
           <form className="space-y-8">
             <div className="grid grid-cols-2 gap-8">
               {inputs.map(({id, label, type, placeholder}) => (
                 <div key={id} className={`${id === "address" ? "col-span-2" : " "}`}>
-                  <div className="flex flex-col">
-                    <label htmlFor={id}>{label}</label>
-                    <input type={type} id={id} name={id} placeholder={placeholder} />
+                  <div className="flex flex-col space-y-2">
+                    <label htmlFor={id} className="font-bold text-xs roboto tracking-wide">{label}</label>
+                    <input 
+                      type={type} 
+                      id={id} name={id} 
+                      placeholder={placeholder} 
+                      className="py-2.5 px-4 rounded-lg bg-[#f5f5f5] placeholder:text-sm"
+                    />
                   </div>
                 </div>
               ))}
@@ -85,9 +92,9 @@ const Contact = () => {
             </div>
              <div className="flex flex-col">
               <label htmlFor="attach">Attach</label>
-              <input type="file" id="attach" name="attach" className="border py-10" />
+              <input type="file" id="attach" name="attach" className="py-10" />
             </div>
-            <Button className="w-full">Submit</Button>
+            <Button type="submit" className="w-full">Submit</Button>
           </form>
           </div>
         </div>
