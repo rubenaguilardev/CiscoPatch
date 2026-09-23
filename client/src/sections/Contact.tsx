@@ -40,7 +40,7 @@ const Contact = () => {
         <img src={contactBg} alt="image of white walls" className="w-full h-full object-cover opacity-50" />
       </div>
       <div className="relative container mx-auto px-4 md:px-6 pt-32 pb-4 md:pb-8 z-10">
-        <div className="grid lg:grid-cols-2 gap-8 border border-light-border/30 rounded-2xl p-8">
+        <div className="grid lg:grid-cols-2 gap-8 lg:border border-light-border/30 rounded-2xl lg:p-8">
           <div className="hidden lg:flex flex-col justify-between lg:bg-[url('/contactbg.png')] bg-no-repeat bg-top-right">
             <h2 className="text-[2rem] font-bold">Get a Free Estimate</h2>
             <div>
@@ -68,7 +68,7 @@ const Contact = () => {
           <div>
             <h2 className="lg:hidden">Get Estimate</h2>
           <form className="space-y-8">
-            <div className="grid grid-cols-2 gap-8">
+            <div className="grid grid-cols-2 lg:gap-8">
               {inputs.map(({id, label, type, placeholder}) => (
                 <div key={id} className={`${id === "address" ? "col-span-2" : " "}`}>
                   <div className="flex flex-col space-y-2">
@@ -77,7 +77,7 @@ const Contact = () => {
                       type={type} 
                       id={id} name={id} 
                       placeholder={placeholder} 
-                      className="py-2.5 px-4 rounded-lg bg-white placeholder:text-sm border-light-border/30 focus:outline-primary focus:bg-primary/5"
+                      className="py-2.5 px-4 rounded-lg bg-white placeholder:text-sm border-light-border/30 focus:outline-primary/50 focus:bg-primary/5"
                     />
                   </div>
                 </div>
