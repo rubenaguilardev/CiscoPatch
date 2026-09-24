@@ -10,9 +10,13 @@ const links = [
 ]
 
 const icons = [
-  { label: "Google", icon: GoogleIcon, link: "" },
+  {
+    label: "Google",
+    icon: GoogleIcon,
+    link: "https://www.google.com/search?q=ciscopatch",
+  },
   { label: "Email", icon: Mail, link: "mailto:info@ciscopatch.com" },
-  { label: "Phone", icon: Phone, link: "#" },
+  { label: "Phone", icon: Phone, link: "tel:+19099999999" },
 ]
 
 const Footer = () => {
@@ -39,9 +43,18 @@ const Footer = () => {
             <div className="flex flex-col justify-end space-y-6 lg:space-y-8 md:pl-6 lg:pl-8">
               <div className="flex justify-center gap-3 lg:gap-4">
                 {icons.map(({ label, icon: Icon, link }) => (
-                  <div key={label} className="p-2 rounded-full border border-muted cursor-pointer ">
-                    <a href={link} aria-label={label}><Icon className="md:h-5 md:w-5 lg:h-6 lg:w-6" /></a>
-                  </div>
+                  <a
+                    key={label}
+                    href={link}
+                    aria-label={label}
+                    {...(link.startsWith("http") && {
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                    })}
+                    className="p-2 rounded-full border border-muted hover:bg-white/10 transition-colors duration-200"
+                  >
+                    <Icon className="md:h-5 md:w-5 lg:h-6 lg:w-6" />
+                  </a>
                 ))}
               </div>
 
