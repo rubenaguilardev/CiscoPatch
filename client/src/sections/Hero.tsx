@@ -1,7 +1,13 @@
-import { ArrowRight, BroomSparkles, ChevronsRight, MapPin, type LucideIcon } from "lucide-react"
-import heroImg from '../assets/hero/hero-img.avif'
+import {
+  ArrowRight,
+  BroomSparkles,
+  ChevronsRight,
+  MapPin,
+  type LucideIcon,
+} from "lucide-react"
+import heroImg from "../assets/hero/hero-img.avif"
 import Button from "../components/Button"
-import heroBg from '../assets/hero/hero-bg.avif'
+import heroBg from "../assets/hero/hero-bg.avif"
 
 type feature = {
   text: string
@@ -11,23 +17,27 @@ type feature = {
 const features: feature[] = [
   {
     text: "Fast & Reliable Service ",
-    icon: ChevronsRight
+    icon: ChevronsRight,
   },
   {
     text: "Clean Worksite, Every Job",
-    icon: BroomSparkles
+    icon: BroomSparkles,
   },
   {
     text: "Serving Inland Empire & LA County",
-    icon: MapPin
-  }
+    icon: MapPin,
+  },
 ]
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={heroBg} alt="image of white walls" className="absolute inset-x-0 -top-[20%] w-full h-[160%] object-cover object-[60%_center] lg:static lg:h-full lg:object-center opacity-85 xl:opacity-75" />
+        <img
+          src={heroBg}
+          alt="image of white walls"
+          className="absolute inset-x-0 -top-[20%] w-full h-[160%] object-cover object-[60%_center] lg:static lg:h-full lg:object-center opacity-85 xl:opacity-75"
+        />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 pt-32 pb-20 relative z-10">
@@ -38,19 +48,27 @@ const Hero = () => {
                 Expert Drywall Repairs, Done Right the First Time
               </h1>
               <p className="text-lg text-muted font-medium max-w-lg leading-relaxed animate-in slide-in-from-bottom duration-700 delay-100">
-                Professional drywall patching, crack repair, and wall restoration for residential and commercial properties.
+                Professional drywall patching, crack repair, and wall
+                restoration for residential and commercial properties.
               </p>
             </div>
             <div className="slide-in-from-bottom animate-in duration-700 delay-300">
-              <a href="#contact"><Button size='lg' className="group bg-primary shadow-2xl shadow-primary/25 hover:scale-102 transition-all duration-300">
-                Get a Free Estimate
-                <ArrowRight className="w-4 h-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
-              </Button>
+              <a href="#contact">
+                <Button
+                  size="lg"
+                  className="group bg-primary shadow-2xl shadow-primary/25 hover:scale-102 transition-all duration-300"
+                >
+                  Get a Free Estimate
+                  <ArrowRight className="w-4 h-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                </Button>
               </a>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-[.9fr_1fr] gap-1 text-muted roboto text-lg lg:text-xl font-semibold space-y-2 xl:space-y-4 animate-in slide-in-from-bottom duration-700 delay-400">
               {features.map(({ text, icon: Icon }, index) => (
-                <div key={text} className={`flex items-center gap-2 ${index === 2 ? "xl:col-span-2" : ""}`}>
+                <div
+                  key={text}
+                  className={`flex items-center gap-2 ${index === 2 ? "xl:col-span-2" : ""}`}
+                >
                   <Icon className="w-7 h-7 text-[#4D2C24]" />
                   <p>{text}</p>
                 </div>
@@ -62,7 +80,8 @@ const Hero = () => {
               <img
                 src={heroImg}
                 alt="remodeled hallway in a home"
-                className="w-full aspect-3/4 object-cover rounded-2xl shadow-xl" />
+                className="w-full aspect-3/4 object-cover rounded-2xl shadow-xl"
+              />
             </div>
           </div>
         </div>

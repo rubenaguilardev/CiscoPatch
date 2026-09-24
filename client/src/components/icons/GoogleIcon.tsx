@@ -2,9 +2,9 @@ import { forwardRef } from "react"
 import type { SVGProps } from "react"
 
 interface GoogleIconProps extends SVGProps<SVGSVGElement> {
-  size?: number | string;
-  color?: string;
-  strokeWidth?: number | string;
+  size?: number | string
+  color?: string
+  strokeWidth?: number | string
 }
 
 const GoogleIcon = forwardRef<SVGSVGElement, GoogleIconProps>(
@@ -16,7 +16,7 @@ const GoogleIcon = forwardRef<SVGSVGElement, GoogleIconProps>(
       className = "",
       ...rest
     },
-    ref
+    ref,
   ) => (
     <svg
       ref={ref}
@@ -35,9 +35,9 @@ const GoogleIcon = forwardRef<SVGSVGElement, GoogleIconProps>(
       <path d="M21 12a9 9 0 1 1-3.5-7.1" />
       <path d="M21 12h-8" />
     </svg>
-  )
-);
+  ),
+)
 
-GoogleIcon.displayName = "GoogleIcon";
+GoogleIcon.displayName = "GoogleIcon"
 
-export default GoogleIcon;
+export default GoogleIcon

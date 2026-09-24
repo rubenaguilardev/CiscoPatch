@@ -7,7 +7,6 @@ import Faq from "./sections/faq/Faq"
 import Contact from "./sections/contact/Contact"
 import Footer from "./sections/Footer"
 
-
 const App = () => {
   return (
     <div className="min-h-screen overflow-hidden ">
@@ -20,8 +19,8 @@ const App = () => {
         <Faq />
         <Contact />
         <Footer />
-      </main >
-    </div >
+      </main>
+    </div>
   )
 }
 

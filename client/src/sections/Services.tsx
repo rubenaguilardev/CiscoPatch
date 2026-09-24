@@ -1,9 +1,8 @@
-import patch from '../assets/services/patch.svg'
-import crack from '../assets/services/crack.svg'
-import restoration from '../assets/services/restoration.svg'
-import remodeled from '../assets/services/hallway.avif'
-import bluewall from '../assets/services/bluewall.avif'
-
+import patch from "../assets/services/patch.svg"
+import crack from "../assets/services/crack.svg"
+import restoration from "../assets/services/restoration.svg"
+import remodeled from "../assets/services/hallway.avif"
+import bluewall from "../assets/services/bluewall.avif"
 
 type Service = {
   icon: string
@@ -14,60 +13,83 @@ type Service = {
 const services: Service[] = [
   {
     icon: patch,
-    heading: 'Drywall Patching',
-    paragraph: 'No repair is too small to deserve attention, and none is too large to handle. From tiny nail holes to wide sections of damaged drywall, we restore your walls to a finish so precise that no trace of the damage is left behind.'
+    heading: "Drywall Patching",
+    paragraph:
+      "No repair is too small to deserve attention, and none is too large to handle. From tiny nail holes to wide sections of damaged drywall, we restore your walls to a finish so precise that no trace of the damage is left behind.",
   },
   {
     icon: crack,
-    heading: 'Crack & Damage Repair',
-    paragraph: 'No crack, dent, or water stain goes unaddressed. We carefully inspect and repair damage early before it has the chance to spread or cause bigger problems down the line, leaving your walls structurally sound, and smooth.'
+    heading: "Crack & Damage Repair",
+    paragraph:
+      "No crack, dent, or water stain goes unaddressed. We carefully inspect and repair damage early before it has the chance to spread or cause bigger problems down the line, leaving your walls structurally sound, and smooth.",
   },
   {
     icon: restoration,
-    heading: 'Wall Restoration',
-    paragraph: 'We bring damaged and worn walls back to life with a finish matched carefully to your existing texture, leaving results that look like they were never touched.'
-  }
-
+    heading: "Wall Restoration",
+    paragraph:
+      "We bring damaged and worn walls back to life with a finish matched carefully to your existing texture, leaving results that look like they were never touched.",
+  },
 ]
 
 const Services = () => {
   return (
     <section id="services" className="py-24 lg:py-32 overflow-hidden">
       <div className="container space-y-4 mx-auto px-4 md:px-6">
-        <h2 className='text-3xl lg:text-4xl font-bold leading-tight animate-in animation-delay-100 lg:text-start'>Services We Provide</h2>
+        <h2 className="text-3xl lg:text-4xl font-bold leading-tight animate-in animation-delay-100 lg:text-start">
+          Services We Provide
+        </h2>
         <div className="grid lg:grid-cols-[1fr_1fr_1.2fr] gap-4">
           {services.slice(0, 2).map(({ icon, heading, paragraph }) => (
-            <div key={heading} className="space-y-8 bg-foreground p-8 rounded-2xl">
-              <img src={icon} alt="" className='w-10 xl:w-12' />
-              <div className='space-y-4'>
-                <h3 className='text-xl xl:text-2xl text-white'>{heading}</h3>
-                <p className='text-sm xl:text-base text-secondary leading-relaxed'>{paragraph}</p>
+            <div
+              key={heading}
+              className="space-y-8 bg-foreground p-8 rounded-2xl"
+            >
+              <img src={icon} alt="" className="w-10 xl:w-12" />
+              <div className="space-y-4">
+                <h3 className="text-xl xl:text-2xl text-white">{heading}</h3>
+                <p className="text-sm xl:text-base text-secondary leading-relaxed">
+                  {paragraph}
+                </p>
               </div>
             </div>
           ))}
-          <div className='rounded-2xl overflow-hidden h-full min-h-70'>
-            <img src={remodeled} alt="" className='h-full w-full object-cover' />
+          <div className="rounded-2xl overflow-hidden h-full min-h-70">
+            <img
+              src={remodeled}
+              alt=""
+              className="h-full w-full object-cover"
+            />
           </div>
         </div>
-        <div className='grid lg:grid-cols-[2fr_1.175fr] gap-4'>
-          <div className='relative order-1 lg:order-0'>
-            <div className='rounded-2xl overflow-hidden h-full min-h-70 lg:min-h-0'>
-              <img src={bluewall} alt="" className='w-full h-full object-cover object-right lg:object-center' />
+        <div className="grid lg:grid-cols-[2fr_1.175fr] gap-4">
+          <div className="relative order-1 lg:order-0">
+            <div className="rounded-2xl overflow-hidden h-full min-h-70 lg:min-h-0">
+              <img
+                src={bluewall}
+                alt=""
+                className="w-full h-full object-cover object-right lg:object-center"
+              />
             </div>
             <a href="#results">
-              <button className='absolute -bottom-16 md:-bottom-18 right-15 text-white text-xs lg:text-sm font-bold bg-primary rounded-full py-10 px-2.5 lg:py-11 lg:px-2 xl:py-12 xl:px-4 border-10 md:border-12 lg:border-14 border-white hover:bg-primary/95 cursor-pointer'>View Results</button>
+              <button className="absolute -bottom-16 md:-bottom-18 right-15 text-white text-xs lg:text-sm font-bold bg-primary rounded-full py-10 px-2.5 lg:py-11 lg:px-2 xl:py-12 xl:px-4 border-10 md:border-12 lg:border-14 border-white hover:bg-primary/95 cursor-pointer">
+                View Results
+              </button>
             </a>
           </div>
-          <div className='space-y-8 bg-foreground p-8 rounded-2xl'>
-            <img src={services[2].icon} alt="" className='w-10 xl:w-12' />
-            <div className='space-y-4'>
-              <h3 className='text-xl xl:text-2xl text-white'>{services[2].heading}</h3>
-              <p className='text-sm xl:text-base text-secondary leading-relaxed'>{services[2].paragraph}</p>
+          <div className="space-y-8 bg-foreground p-8 rounded-2xl">
+            <img src={services[2].icon} alt="" className="w-10 xl:w-12" />
+            <div className="space-y-4">
+              <h3 className="text-xl xl:text-2xl text-white">
+                {services[2].heading}
+              </h3>
+              <p className="text-sm xl:text-base text-secondary leading-relaxed">
+                {services[2].paragraph}
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section >
+    </section>
   )
 }
 
