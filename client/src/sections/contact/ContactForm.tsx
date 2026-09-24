@@ -127,7 +127,7 @@ const ContactForm = () => {
           className={`${fieldClasses} resize-none placeholder:text-sm`}
         />
       </FormField>
-      <FormField id="attach" label="Attach (optional)">
+      <FormField id="attach" label="Attach">
         <label className="flex flex-col items-center justify-center gap-2 h-30 rounded-lg bg-white border border-dashed border-light-border/60 text-muted cursor-pointer hover:bg-primary/5 hover:border-primary/50 has-focus-visible:outline-2 has-focus-visible:outline-primary transition-colors duration-200">
           {previewUrl ? (
             <>
@@ -152,6 +152,7 @@ const ContactForm = () => {
             name="attach"
             accept="image/*"
             className="sr-only"
+            required
             onChange={handleFileChange}
           />
         </label>
