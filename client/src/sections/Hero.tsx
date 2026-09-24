@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={heroBg} alt="image of white walls" className="w-full h-full object-cover opacity-85 xl:opacity-75" />
+        <img src={heroBg} alt="image of white walls" className="absolute inset-x-0 -top-[20%] w-full h-[160%] object-cover object-[60%_center] lg:static lg:h-full lg:object-center opacity-85 xl:opacity-75" />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 pt-32 pb-20 relative z-10">

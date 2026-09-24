@@ -25,7 +25,7 @@ const About = () => {
   return (
     <section id='about' className="relative py-24 lg:py-32 overflow-hidden">
       <div className="absolute inset-0">
-        <img src={aboutBg} alt="image of white walls" className="w-full h-full object-cover opacity-85 xl:opacity-75" />
+        <img src={aboutBg} alt="image of white walls" className="absolute inset-x-0 top-1/2 -translate-y-1/2 w-full h-[200%] lg:static lg:translate-y-0 lg:h-full object-cover opacity-85 xl:opacity-75" />
       </div>
       <div className="container mx-auto lg:grid grid-cols-2 items-center lg:gap-16 px-4 md:px-6 relative space-y-8 lg:space-y-0 z-10">
         <div className="relative slide-in-from-left animate-in duration-700 delay-500">
@@ -44,7 +44,7 @@ const About = () => {
             Craftsmanship built over years of doing the work. Results that show in every repair.
           </h3>
           {aboutData.map(({ heading, paragraph }) => (
-            <div className=''>
+            <div key={heading}>
               <h4 className='font-medium text-lg lg:text-xl'>{heading}</h4>
               <p className='text-sm lg:text-base text-muted'>{paragraph}</p>
             </div>

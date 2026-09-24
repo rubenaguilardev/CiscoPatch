@@ -30,7 +30,7 @@ const Contact = () => {
           className="w-full h-full object-cover opacity-50"
         />
       </div>
-      <div className="relative container mx-auto px-4 md:px-6 pt-32 pb-4 md:pb-8 z-10">
+      <div className="relative container mx-auto px-4 md:px-6 py-24 lg:py-32 z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:border border-light-border/30 rounded-2xl lg:p-8">
           <div className="hidden lg:flex flex-col justify-between lg:bg-[url('/contactbg.png')] bg-no-repeat bg-top-right">
             <h2 className="text-[2rem] font-bold">Get a Free Estimate</h2>

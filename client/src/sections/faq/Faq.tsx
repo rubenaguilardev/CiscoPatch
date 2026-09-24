@@ -27,7 +27,7 @@ const Faq = () => {
   }
 
   return (
-    <section id='faq' className="py-16 md:py-24 lg:py-32 overflow-hidden w-full">
+    <section id='faq' className="py-24 lg:py-32 overflow-hidden w-full">
       <div className="container space-y-4 mx-auto px-4 md:px-6 relative">
         <div className="bg-foreground p-8 rounded-2xl lg:bg-[url('/faq-bg.png')] bg-no-repeat bg-bottom-right lg:bg-size-[350px_145px] xl:bg-auto">
           <div className="flex flex-col gap-4">
@@ -39,7 +39,7 @@ const Faq = () => {
             </p>
           </div>
           <a href="#contact">
-            <button className='absolute top-[75%] md:top-[58%] left-[55%] md:left-[72%] lg:left-[58%] text-white text-xs lg:text-sm font-bold bg-primary rounded-full py-10 px-2.5 lg:py-11 lg:px-2 xl:py-12 xl:px-4 border-10 md:border-12 log:border-14 border-white cursor-pointer hover:bg-[#cc411f]'>
+            <button className='absolute top-[75%] md:top-[58%] left-[55%] md:left-[72%] lg:left-[58%] text-white text-xs lg:text-sm font-bold bg-primary rounded-full py-10 px-2.5 lg:py-11 lg:px-2 xl:py-12 xl:px-4 border-10 md:border-12 lg:border-14 border-white cursor-pointer hover:bg-[#cc411f]'>
               Get Estimate
             </button>
           </a>
@@ -52,7 +52,7 @@ const Faq = () => {
             <div
               key={label}
               onClick={() => handleLabelChange(label)}
-              className={`flex justify-center items-center py-1.5 px-2.5 md:px-10 rounded-t-xl text-sm regular-res md:text-base lg:text-lg font-bold $ ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary md:hover:bg-muted/90"} transition-colors duration-250 ease-in-out cursor-pointer`}
+              className={`flex justify-center items-center py-1.5 px-2.5 md:px-10 rounded-t-xl text-sm regular-res md:text-base lg:text-lg font-bold ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary md:hover:bg-muted/90"} transition-colors duration-250 ease-in-out cursor-pointer`}
             >
               {label}
             </div>

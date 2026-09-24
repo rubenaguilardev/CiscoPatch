@@ -3,7 +3,7 @@ import Hero from "./sections/Hero"
 import Services from "./sections/Services"
 import About from "./sections/About"
 import Faq from "./sections/faq/Faq"
-import Results from "./sections/Results"
+// import Results from "./sections/Results"
 import Contact from "./sections/contact/Contact"
 import Footer from "./sections/Footer"
 
@@ -16,7 +16,7 @@ const App = () => {
         <Hero />
         <Services />
         <About />
-        <Results />
+        {/* <Results /> */}
         <Faq />
         <Contact />
         <Footer />
