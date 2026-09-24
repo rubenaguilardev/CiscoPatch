@@ -1,4 +1,11 @@
-import type { FormEvent, HTMLAttributes } from "react"
+import {
+  useEffect,
+  useState,
+  type ChangeEvent,
+  type FormEvent,
+  type HTMLAttributes,
+} from "react"
+import { ImagePlus } from "lucide-react"
 import Button from "../../components/Button"
 import FormField from "./FormField"
 
@@ -68,9 +75,21 @@ const fieldClasses =
   "py-2.5 px-4 rounded-lg bg-white border border-light-border/30 focus:outline-primary focus:bg-primary/5"
 
 const ContactForm = () => {
+  const [previewUrl, setPreviewUrl] = useState<string | null>(null)
+
+  useEffect(() => {
+    return () => {
+      if (previewUrl) URL.revokeObjectURL(previewUrl)
+    }
+  }, [previewUrl])
+
+  const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    setPreviewUrl(file ? URL.createObjectURL(file) : null)
+  }
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    // No backend yet: send new FormData(e.currentTarget) here so the attachment is included.
   }
 
   return (
@@ -109,12 +128,33 @@ const ContactForm = () => {
         />
       </FormField>
       <FormField id="attach" label="Attach (optional)">
-        <input
-          type="file"
-          id="attach"
-          name="attach"
-          className={`${fieldClasses} text-sm h-30`}
-        />
+        <label className="flex flex-col items-center justify-center gap-2 h-30 rounded-lg bg-white border border-dashed border-light-border/60 text-muted cursor-pointer hover:bg-primary/5 hover:border-primary/50 has-focus-visible:outline-2 has-focus-visible:outline-primary transition-colors duration-200">
+          {previewUrl ? (
+            <>
+              <img
+                src={previewUrl}
+                alt="Selected photo preview"
+                className="h-16 w-16 object-cover rounded-md shadow-sm"
+              />
+              <span className="text-xs font-medium">Click to change photo</span>
+            </>
+          ) : (
+            <>
+              <ImagePlus className="h-7 w-7 text-primary" />
+              <span className="text-sm font-medium">
+                Upload a photo of the damage
+              </span>
+            </>
+          )}
+          <input
+            type="file"
+            id="attach"
+            name="attach"
+            accept="image/*"
+            className="sr-only"
+            onChange={handleFileChange}
+          />
+        </label>
       </FormField>
       <Button type="submit" className="w-full">
         Submit
