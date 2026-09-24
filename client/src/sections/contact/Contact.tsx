@@ -82,7 +82,7 @@ const Contact = () => {
 
           <div>
             <h2 className="lg:hidden text-[2rem] font-bold mb-8">
-              Get Estimate
+              Get a Free Estimate
             </h2>
             <ContactForm />
           </div>
