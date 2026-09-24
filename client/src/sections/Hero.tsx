@@ -50,7 +50,7 @@ const Hero = () => {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-[.9fr_1fr] gap-1 text-muted roboto text-lg lg:text-xl font-semibold space-y-2 xl:space-y-4 animate-in slide-in-from-bottom duration-700 delay-400">
               {features.map(({ text, icon: Icon }, index) => (
-                <div key={index} className={`flex items-center gap-2 ${index === 2 ? "xl:col-span-2" : ""}`}>
+                <div key={text} className={`flex items-center gap-2 ${index === 2 ? "xl:col-span-2" : ""}`}>
                   <Icon className="w-7 h-7 text-[#4D2C24]" />
                   <p>{text}</p>
                 </div>

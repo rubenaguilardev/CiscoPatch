@@ -10,9 +10,9 @@ const links = [
 ]
 
 const icons = [
-  { icon: GoogleIcon, link: "" },
-  { icon: Mail, link: "mailto:info@ciscopatch.com" },
-  { icon: Phone, link: "#" },
+  { label: "Google", icon: GoogleIcon, link: "" },
+  { label: "Email", icon: Mail, link: "mailto:info@ciscopatch.com" },
+  { label: "Phone", icon: Phone, link: "#" },
 ]
 
 const Footer = () => {
@@ -33,14 +33,14 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row space-y-6 md:space-y-0">
             <div className="w-full md:w-55 lg:w-60 flex flex-wrap justify-between items-center text-sm lg:text-base md:px-6 lg:px-8 md:py-4 gap-4 lg:gap-4 md:border-l md:border-r border-muted">
               {links.map(({ link, label }, index) => (
-                <a key={index} href={link} className={`${index === 3 ? "md:mr-3.5 lg:mr-4" : ""}`}>{label}</a>
+                <a key={label} href={link} className={`${index === 3 ? "md:mr-3.5 lg:mr-4" : ""}`}>{label}</a>
               ))}
             </div>
             <div className="flex flex-col justify-end space-y-6 lg:space-y-8 md:pl-6 lg:pl-8">
               <div className="flex justify-center gap-3 lg:gap-4">
-                {icons.map(({ icon: Icon, link }, index) => (
-                  <div className="p-2 rounded-full border border-muted cursor-pointer ">
-                    <a href={link}><Icon key={index} className="md:h-5 md:w-5 lg:h-6 lg:w-6" /></a>
+                {icons.map(({ label, icon: Icon, link }) => (
+                  <div key={label} className="p-2 rounded-full border border-muted cursor-pointer ">
+                    <a href={link} aria-label={label}><Icon className="md:h-5 md:w-5 lg:h-6 lg:w-6" /></a>
                   </div>
                 ))}
               </div>

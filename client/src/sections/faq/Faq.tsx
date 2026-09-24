@@ -48,9 +48,9 @@ const Faq = () => {
       </div>
       <div className="container space-y-4 mx-auto md:px-6 relative">
         <div className="flex justify-center md:gap-1 mt-24 md:mt-32">
-          {labels.map((label, index) => (
+          {labels.map((label) => (
             <div
-              key={index}
+              key={label}
               onClick={() => handleLabelChange(label)}
               className={`flex justify-center items-center py-1.5 px-2.5 md:px-10 rounded-t-xl text-sm regular-res md:text-base lg:text-lg font-bold $ ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary md:hover:bg-muted/90"} transition-colors duration-250 ease-in-out cursor-pointer`}
             >

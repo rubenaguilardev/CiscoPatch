@@ -75,6 +75,7 @@ const Contact = () => {
                     <label htmlFor={id} className="font-bold text-xs roboto tracking-wide">{label}</label>
                     <input 
                       type={type} 
+                      required
                       id={id} name={id} 
                       placeholder={placeholder} 
                       className="py-2.5 px-4 rounded-lg bg-white placeholder:text-sm border-light-border/30 focus:outline-primary/50 focus:bg-primary/5"
@@ -89,14 +90,15 @@ const Contact = () => {
                 id="description" 
                 name="description" 
                 rows={5} 
-                className="py-2.5 px-4 rounded-lg bg-white placeholder:text-sm border border-light-border/30 focus:outline-primary focus:bg-primary/5"
+                required
+                className="resize-none py-2.5 px-4 rounded-lg bg-white placeholder:text-sm border border-light-border/30 focus:outline-primary focus:bg-primary/5"
                 placeholder="Description of work..."
               >
               </textarea>
             </div>
              <div className="flex flex-col sapce-y-2">
               <label htmlFor="attach" className="font-bold text-xs roboto tracking-wide">Attach</label>
-              <input type="file" id="attach" name="attach" className="py-2.5 px-4 rounded-lg bg-white text-sm h-30 border border-light-border/30" />
+              <input type="file" id="attach" name="attach" required className="py-2.5 px-4 rounded-lg bg-white text-sm h-30 border border-light-border/30" />
             </div>
             <Button type="submit" className="w-full">Submit</Button>
           </form>
