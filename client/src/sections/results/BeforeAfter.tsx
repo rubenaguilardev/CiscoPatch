@@ -22,7 +22,7 @@ const BeforeAfter = ({
 }: BeforeAfterProps) => {
   return (
     <div
-      className={`relative overflow-hidden md:rounded-2xl md:shadow-xl ${className}`}
+      className={`relative overflow-hidden rounded-2xl shadow-xl ${className}`}
     >
       <ReactCompareSlider
         className="aspect-square md:aspect-video bg-black"

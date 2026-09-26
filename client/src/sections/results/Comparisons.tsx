@@ -22,13 +22,7 @@ const Comparisons = () => {
 
   return (
     <div className="space-y-6">
-      <BeforeAfter
-        key={active}
-        before={before}
-        after={after}
-        alt={alt}
-        className="w-screen ml-[calc(50%-50vw)] md:w-auto md:ml-0"
-      />
+      <BeforeAfter key={active} before={before} after={after} alt={alt} />
       <div className="flex justify-center md:justify-end gap-3">
         {comparisons.map(({ alt }, index) => (
           <button
