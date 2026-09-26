@@ -43,7 +43,7 @@ const Contact = () => {
         <img
           src={contactBg}
           alt="image of white walls"
-          className="w-full h-full object-cover opacity-50"
+          className="w-full h-full object-cover opacity-40"
         />
       </div>
       <div className="relative container mx-auto px-4 md:px-6 py-24 lg:py-32 z-10">
