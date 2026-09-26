@@ -23,7 +23,7 @@ const Results = () => {
             <Comparisons />
           </div>
           <div className="space-y-6">
-            <h3 className="text-xl lg:text-2xl font-bold">Recent Work</h3>
+            <h3 className="text-xl lg:text-2xl font-bold text-muted">Recent Work</h3>
             <Gallery />
           </div>
         </div>
