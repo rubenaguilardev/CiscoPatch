@@ -4,7 +4,7 @@ import Gallery from "./Gallery"
 const Results = () => {
   return (
     <section id="results" className="py-24 lg:py-32 overflow-hidden">
-      <div className="container mx-auto px-4 md:px-6 space-y-8">
+      <div className="container mx-auto px-4 md:px-6 space-y-6 lg:space-y-8">
         <h2 className="text-3xl lg:text-4xl font-bold leading-tight">
           Our Results
         </h2>

@@ -12,7 +12,7 @@ type BeforeAfterProps = {
 }
 
 const labelClasses =
-  "absolute z-10 top-4 px-3 py-1 rounded-full bg-foreground/70 text-white text-xs font-bold tracking-wide pointer-events-none"
+  "absolute top-4 px-3 py-1 rounded-full bg-foreground/70 text-white text-xs font-bold tracking-wide pointer-events-none"
 
 const BeforeAfter = ({
   before,
@@ -27,9 +27,17 @@ const BeforeAfter = ({
       <ReactCompareSlider
         className="aspect-square md:aspect-video bg-black"
         itemOne={
-          <ReactCompareSliderImage src={before} alt={`${alt}, before`} />
+          <div className="relative h-full w-full">
+            <ReactCompareSliderImage src={before} alt={`${alt}, before`} />
+            <span className={`${labelClasses} left-4`}>Before</span>
+          </div>
         }
-        itemTwo={<ReactCompareSliderImage src={after} alt={`${alt}, after`} />}
+        itemTwo={
+          <div className="relative h-full w-full">
+            <ReactCompareSliderImage src={after} alt={`${alt}, after`} />
+            <span className={`${labelClasses} right-4`}>After</span>
+          </div>
+        }
         handle={
           <ReactCompareSliderHandle
             buttonStyle={{
@@ -41,8 +49,6 @@ const BeforeAfter = ({
           />
         }
       />
-      <span className={`${labelClasses} left-4`}>Before</span>
-      <span className={`${labelClasses} right-4`}>After</span>
     </div>
   )
 }
