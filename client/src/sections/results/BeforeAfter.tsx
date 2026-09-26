@@ -12,7 +12,7 @@ type BeforeAfterProps = {
 }
 
 const labelClasses =
-  "absolute top-4 px-3 py-1 rounded-full bg-foreground/70 text-white text-xs font-bold tracking-wide pointer-events-none"
+  "absolute z-10 top-4 px-3 py-1 rounded-full bg-foreground/70 text-white text-xs font-bold tracking-wide pointer-events-none"
 
 const BeforeAfter = ({
   before,
@@ -25,7 +25,7 @@ const BeforeAfter = ({
       className={`relative overflow-hidden md:rounded-2xl md:shadow-xl ${className}`}
     >
       <ReactCompareSlider
-        className="aspect-4/3 md:aspect-video bg-black"
+        className="aspect-square md:aspect-video bg-black"
         itemOne={
           <ReactCompareSliderImage src={before} alt={`${alt}, before`} />
         }
