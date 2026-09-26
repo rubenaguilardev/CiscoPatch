@@ -1,7 +1,5 @@
-import BeforeAfter from "./BeforeAfter"
+import Comparisons from "./Comparisons"
 import Gallery from "./Gallery"
-import before from "../../assets/temp/temp1.png"
-import after from "../../assets/temp/temp.jpg"
 
 const Results = () => {
   return (
@@ -22,12 +20,7 @@ const Results = () => {
                 disappears for good.
               </p>
             </div>
-            <BeforeAfter
-              before={before}
-              after={after}
-              alt="Living room wall"
-              className="w-screen ml-[calc(50%-50vw)] md:w-auto md:ml-0"
-            />
+            <Comparisons />
           </div>
           <div className="space-y-6">
             <h3 className="text-xl lg:text-2xl font-bold">Recent Work</h3>
