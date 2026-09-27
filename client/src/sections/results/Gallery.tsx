@@ -36,6 +36,7 @@ const Gallery = () => {
         slidesPerView={1.15}
         breakpoints={{
           640: { slidesPerView: 2 },
+          1024: { slidesPerView: 2.5 },
         }}
         onSwiper={(instance) => {
           setSwiper(instance)
