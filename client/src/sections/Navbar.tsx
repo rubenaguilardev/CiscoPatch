@@ -65,7 +65,7 @@ const Navbar = () => {
         />
       )}
       <header
-        className={`fixed top-0 left-0 right-0 py-5 bg-white z-50 ${isScrolled ? "shadow-lg" : ""}`}
+        className={`fixed top-0 left-0 right-0 py-5 z-50 transition-[background-color,box-shadow] duration-300 ${isScrolled || mobileMenuIsOpen ? "bg-white shadow-lg" : ""}`}
       >
         <nav className="container mx-auto px-6 flex items-center justify-between">
           <div
