@@ -35,9 +35,15 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroBg}
-          alt="image of white walls"
-          className="absolute inset-x-0 -top-[20%] w-full h-[160%] object-cover object-[60%_center] lg:static lg:h-full lg:object-center opacity-85 xl:opacity-70"
+          alt=""
+          className="hidden lg:block w-full h-full object-cover opacity-85 xl:opacity-70"
         />
+        <img
+          src={heroImg}
+          alt=""
+          className="lg:hidden w-full h-full object-cover"
+        />
+        <div className="lg:hidden absolute inset-0 bg-linear-to-b from-white/90 via-white/80 to-white/65" />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 pt-32 pb-20 relative z-10">
@@ -75,7 +81,7 @@ const Hero = () => {
               ))}
             </div>
           </div>
-          <div className="relative slide-in-from-right animate-in duration-700 delay-500 mt-12 md:mt-0">
+          <div className="hidden lg:block relative slide-in-from-right animate-in duration-700 delay-500">
             <div className="relative max-w-lg mx-auto">
               <img
                 src={heroImg}
