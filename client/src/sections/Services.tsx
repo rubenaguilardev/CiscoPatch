@@ -40,10 +40,10 @@ const Services = () => {
           Services We Provide
         </h2>
         <div className="grid lg:grid-cols-[1fr_1fr_1.2fr] gap-4">
-          {services.slice(0, 2).map(({ icon, heading, paragraph }) => (
+          {services.slice(0, 2).map(({ icon, heading, paragraph }, index) => (
             <div
               key={heading}
-              className="space-y-8 bg-foreground p-8 rounded-2xl"
+              className={`space-y-8 bg-foreground p-8 rounded-2xl ${index === 0 ? "order-1" : "order-3"} lg:order-0`}
             >
               <img src={icon} alt="" className="w-10 xl:w-12" />
               <div className="space-y-4">
@@ -54,7 +54,7 @@ const Services = () => {
               </div>
             </div>
           ))}
-          <picture className="block rounded-2xl overflow-hidden h-full max-h-80">
+          <picture className="block order-2 lg:order-0 rounded-2xl overflow-hidden h-80 lg:h-full lg:min-h-70">
             <source media="(min-width: 1024px)" srcSet={remodeled} />
             <img src={heroImg} alt="" className="h-full w-full object-cover" />
           </picture>
