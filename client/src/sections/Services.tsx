@@ -2,6 +2,7 @@ import patch from "../assets/services/patch.svg"
 import crack from "../assets/services/crack.svg"
 import restoration from "../assets/services/restoration.svg"
 import remodeled from "../assets/services/hallway.avif"
+import heroImg from "../assets/hero/hero-img.avif"
 import bluewall from "../assets/services/bluewall.avif"
 
 type Service = {
@@ -53,13 +54,10 @@ const Services = () => {
               </div>
             </div>
           ))}
-          <div className="rounded-2xl overflow-hidden h-full min-h-70">
-            <img
-              src={remodeled}
-              alt=""
-              className="h-full w-full object-cover"
-            />
-          </div>
+          <picture className="block rounded-2xl overflow-hidden h-full max-h-80">
+            <source media="(min-width: 1024px)" srcSet={remodeled} />
+            <img src={heroImg} alt="" className="h-full w-full object-cover" />
+          </picture>
         </div>
         <div className="grid lg:grid-cols-[2fr_1.175fr] gap-4">
           <div className="relative order-1 lg:order-0">
@@ -71,7 +69,7 @@ const Services = () => {
               />
             </div>
             <a href="#results">
-              <button className="absolute -bottom-16 md:-bottom-18 right-15 text-white text-xs lg:text-sm font-bold bg-primary rounded-full flex items-center justify-center text-center leading-tight size-29 md:size-30 lg:size-34 xl:size-36 border-10 md:border-12 lg:border-14 border-white hover:bg-primary/95 cursor-pointer">
+              <button className="absolute -bottom-16 md:-bottom-18 right-15 text-white text-xs lg:text-sm font-bold bg-primary rounded-full flex items-center justify-center text-center leading-tight size-32 lg:size-34 xl:size-36 border-10 md:border-12 lg:border-14 border-white hover:bg-primary/95 cursor-pointer">
                 View Results
               </button>
             </a>

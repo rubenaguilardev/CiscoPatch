@@ -31,7 +31,7 @@ const About = () => {
         <img
           src={aboutBg}
           alt="image of white walls"
-          className="absolute inset-x-0 top-1/2 -translate-y-1/2 w-full h-[200%] lg:static lg:translate-y-0 lg:h-full object-cover opacity-85 xl:opacity-75"
+          className="absolute inset-x-0 -top-[77%] w-full h-[260%] lg:static lg:h-full object-cover opacity-85 xl:opacity-75"
         />
       </div>
       <div className="container mx-auto lg:grid grid-cols-2 items-center lg:gap-16 px-4 md:px-6 relative space-y-8 lg:space-y-0 z-10">
@@ -40,7 +40,7 @@ const About = () => {
             <img
               src={aboutImg}
               alt="remodeled hallway in a home"
-              className="w-full aspect-3/4 object-cover rounded-2xl shadow-xl"
+              className="w-full aspect-4/5 lg:aspect-3/4 object-cover rounded-2xl shadow-xl"
             />
           </div>
         </div>

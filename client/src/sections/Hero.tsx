@@ -36,14 +36,8 @@ const Hero = () => {
         <img
           src={heroBg}
           alt=""
-          className="hidden lg:block w-full h-full object-cover opacity-85 xl:opacity-70"
+          className="absolute inset-x-0 -top-[15%] w-full h-[160%] object-cover object-[50%_center] contrast-150 lg:static lg:h-full lg:object-center lg:contrast-100 lg:opacity-85 xl:opacity-70"
         />
-        <img
-          src={heroImg}
-          alt=""
-          className="lg:hidden w-full h-full object-cover"
-        />
-        <div className="lg:hidden absolute inset-0 bg-linear-to-b from-white/90 via-white/80 to-white/65" />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 pt-32 pb-20 relative z-10">
