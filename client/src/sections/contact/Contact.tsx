@@ -25,8 +25,8 @@ const contacts: contactInfo[] = [
   {
     icon: Phone,
     label: "Call or text us",
-    info: "(951)623-7366",
-    href: "tel:+19516237366",
+    info: "(951)963-4252",
+    href: "tel:+19099634252",
   },
   {
     icon: MapPin,
