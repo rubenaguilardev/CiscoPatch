@@ -16,7 +16,7 @@ const icons = [
     link: "https://www.google.com/search?q=ciscopatch",
   },
   { label: "Email", icon: Mail, link: "mailto:info@ciscopatch.com" },
-  { label: "Phone", icon: Phone, link: "tel:+19516237366" },
+  { label: "Phone", icon: Phone, link: "tel:+19099634252" },
 ]
 
 const Footer = () => {
