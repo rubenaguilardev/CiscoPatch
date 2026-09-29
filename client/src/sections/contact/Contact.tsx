@@ -25,7 +25,7 @@ const contacts: contactInfo[] = [
   {
     icon: Phone,
     label: "Call or text us",
-    info: "(951)963-4252",
+    info: "(909)963-4252",
     href: "tel:+19099634252",
   },
   {
