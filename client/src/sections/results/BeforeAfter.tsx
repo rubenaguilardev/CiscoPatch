@@ -12,7 +12,7 @@ type BeforeAfterProps = {
 }
 
 const labelClasses =
-  "absolute top-4 px-3 py-1 rounded-full bg-foreground/70 text-white text-xs font-bold tracking-wide pointer-events-none"
+  "absolute top-4 px-3 py-1 rounded-lg bg-foreground text-white text-xs font-bold tracking-wide pointer-events-none"
 
 const BeforeAfter = ({
   before,
