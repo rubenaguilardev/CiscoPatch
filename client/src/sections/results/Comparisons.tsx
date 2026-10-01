@@ -34,7 +34,7 @@ const Comparisons = () => {
             className={`h-10 w-10 rounded-full text-sm font-bold cursor-pointer transition-colors duration-200 ${
               index === active
                 ? "bg-primary text-white"
-                : "bg-foreground text-white hover:bg-primary/80"
+                : "bg-foreground text-white hover:bg-[#cc411f]"
             }`}
           >
             {index + 1}
