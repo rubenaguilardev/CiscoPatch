@@ -46,7 +46,7 @@ const Footer = () => {
                 <a
                   key={label}
                   href={link}
-                  className={`${index === 3 ? "md:mr-3.5 lg:mr-4" : ""}`}
+                  className={`${index === 3 ? "md:mr-3.5 lg:mr-4" : ""} text-secondary hover:text-white`}
                 >
                   {label}
                 </a>
