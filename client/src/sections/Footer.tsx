@@ -25,7 +25,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6 pt-8 lg:pt-12 pb-4 md:pb-8">
         <div className="flex flex-col md:flex-row justify-between space-y-6 md:space-y-0 bg-foreground text-white p-6 lg:p-8 rounded-2xl">
           <div className="space-y-6 lg:space-y-8">
-            <div className="flex justify-center items-end gap-2">
+            <a href="#" className="flex justify-center items-end gap-2">
               <img
                 src={logofooter}
                 alt="Cisco Patch white logo"
@@ -34,7 +34,7 @@ const Footer = () => {
               <span className="font-bold roboto lg:text-lg translate-y-1.75">
                 CiscoPatch
               </span>
-            </div>
+            </a>
             <div className="font-semibold text-secondary text-sm lg:text-base text-center md:text-start">
               <span className="md:block">Seamless Repairs. </span>
               <span>Lasting Walls.</span>

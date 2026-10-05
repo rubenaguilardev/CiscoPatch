@@ -31,7 +31,7 @@ const About = () => {
         <img
           src={aboutBg}
           alt="image of white walls"
-          className="absolute inset-x-0 -top-[77%] w-full h-[260%] lg:static lg:h-full object-cover opacity-85 xl:opacity-75"
+          className="absolute inset-x-0 -top-[77%] w-full h-[260%] lg:static lg:h-full object-cover opacity-85 xl:opacity-80"
         />
       </div>
       <div className="container mx-auto lg:grid grid-cols-2 items-center lg:gap-16 px-4 md:px-6 relative space-y-8 lg:space-y-0 z-10">

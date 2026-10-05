@@ -36,7 +36,7 @@ const Hero = () => {
         <img
           src={heroBg}
           alt=""
-          className="absolute inset-x-0 -top-[15%] w-full h-[160%] object-cover object-[50%_center] contrast-150 lg:static lg:h-full lg:object-center lg:contrast-100 lg:opacity-85 xl:opacity-70"
+          className="absolute inset-x-0 -top-[15%] w-full h-[160%] object-cover object-[50%_center] contrast-150 lg:static lg:h-full lg:object-center lg:contrast-100 lg:opacity-85 xl:opacity-80"
         />
       </div>
 
