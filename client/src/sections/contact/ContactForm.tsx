@@ -175,7 +175,7 @@ const ContactForm = () => {
                         e.preventDefault()
                         removePhoto(index)
                       }}
-                      className="absolute -top-2 -right-2 h-5 w-5 flex items-center justify-center rounded-full bg-foreground text-white hover:bg-primary cursor-pointer"
+                      className="absolute -top-2 -right-2 h-5 w-5 flex items-center justify-center rounded-full bg-foreground text-white hover:bg-[#cc411f] cursor-pointer transition-colors duration-200"
                     >
                       <X className="h-3 w-3" />
                     </button>

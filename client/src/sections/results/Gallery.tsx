@@ -15,7 +15,7 @@ const photos = Object.entries(
   .map(([, src]) => src)
 
 const arrowClasses =
-  "flex items-center justify-center h-10 w-10 rounded-full bg-foreground text-white hover:bg-primary disabled:opacity-40 disabled:hover:bg-foreground cursor-pointer disabled:cursor-default transition-colors duration-200"
+  "flex items-center justify-center h-10 w-10 rounded-full bg-foreground text-white hover:bg-[#cc411f] disabled:opacity-40 disabled:hover:bg-foreground cursor-pointer disabled:cursor-default transition-colors duration-200"
 
 const Gallery = () => {
   const [swiper, setSwiper] = useState<SwiperClass | null>(null)

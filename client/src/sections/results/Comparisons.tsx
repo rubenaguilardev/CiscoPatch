@@ -33,7 +33,7 @@ const Comparisons = () => {
             onClick={() => setActive(index)}
             className={`h-10 w-10 rounded-full text-sm font-bold cursor-pointer transition-colors duration-200 ${
               index === active
-                ? "bg-primary text-white"
+                ? "bg-primary text-white hover:bg-[#cc411f]"
                 : "bg-foreground text-white hover:bg-[#cc411f]"
             }`}
           >

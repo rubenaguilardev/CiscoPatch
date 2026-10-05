@@ -130,7 +130,7 @@ const Navbar = () => {
                   <Button
                     onClick={() => setMobileMenuIsOpen(false)}
                     size="sm"
-                    className="w-full bg-primary hover:bg-primary/90"
+                    className="w-full"
                   >
                     Contact Today
                   </Button>
