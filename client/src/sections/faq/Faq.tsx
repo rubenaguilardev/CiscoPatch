@@ -52,7 +52,7 @@ const Faq = () => {
             <div
               key={label}
               onClick={() => handleLabelChange(label)}
-              className={`flex justify-center items-center py-1.5 px-2.5 md:px-10 rounded-t-xl text-sm regular-res md:text-base lg:text-lg font-bold ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary md:hover:bg-muted/90"} transition-colors duration-250 ease-in-out cursor-pointer`}
+              className={`flex justify-center items-center py-1.5 px-2.5 md:px-10 rounded-t-xl text-sm regular-res md:text-base lg:text-lg font-bold transition-colors duration-200 cursor-pointer ${label === activeLabel ? "bg-foreground text-primary" : "text-secondary md:hover:bg-muted/90 md:hover:text-foreground"}`}
             >
               {label}
             </div>

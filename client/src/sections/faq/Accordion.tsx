@@ -19,10 +19,10 @@ const Accordion = ({
   const isLastInCategory = id === `${category}4`
 
   return (
-    <div className="hover:text-primary transition-colors duration-150">
+    <div className="hover:text-primary transition-colors duration-200">
       <button
         onClick={onToggle}
-        className={`w-full flex justify-between cursor-pointer ${isOpen ? "bg-[#4D2C24] text-primary font-bold" : ""}`}
+        className={`w-full flex justify-between cursor-pointer transition-colors duration-200 ${isOpen ? "bg-[#4D2C24] text-primary font-bold" : ""}`}
       >
         <div
           className={`flex justify-between items-center w-full mx-6 md:mx-8 ${hideBorder ? "border-none" : "border-b border-muted"} ${isFirstInCategory ? "pt-3 mt-4" : "pt-8"} ${isLastInCategory ? "border-none pb-0" : "pb-6"}`}

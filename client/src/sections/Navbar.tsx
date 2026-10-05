@@ -70,7 +70,7 @@ const Navbar = () => {
         <nav className="container mx-auto px-6 flex items-center justify-between">
           <div
             onClick={() => setMobileMenuIsOpen(false)}
-            className="hover:text-primary"
+            className="hover:text-primary transition-colors duration-200"
           >
             <a href="#" className="flex gap-1">
               <img src={logo} alt="CiscoPatch logo" className="h-9 lg:h-10" />
@@ -86,7 +86,7 @@ const Navbar = () => {
                 <a
                   key={label}
                   href={href}
-                  className={`px-4 text-sm font-medium text-secondary hover:text-white ${label === "FAQ" ? "border-none" : "border-r border-muted"}`}
+                  className={`px-4 text-sm font-medium text-secondary hover:text-white transition-colors duration-200 ${label === "FAQ" ? "border-none" : "border-r border-muted"}`}
                 >
                   {label}
                 </a>
@@ -103,7 +103,7 @@ const Navbar = () => {
 
           <button
             onClick={() => setMobileMenuIsOpen((prev) => !prev)}
-            className="md:hidden p-2 hover:text-foreground/90"
+            className="md:hidden p-2 hover:text-foreground/90 transition-colors duration-200"
           >
             {mobileMenuIsOpen ? <X /> : <Menu />}
           </button>
@@ -117,7 +117,7 @@ const Navbar = () => {
                   key={label}
                   href={href}
                   onClick={() => setMobileMenuIsOpen(false)}
-                  className="text-lg text-white hover:text-white/90 py-2"
+                  className="text-lg text-white hover:text-white/90 py-2 transition-colors duration-200"
                 >
                   <div className="flex gap-3">
                     <Icon />
