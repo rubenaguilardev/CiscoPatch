@@ -40,11 +40,13 @@ const BeforeAfter = ({
         }
         handle={
           <ReactCompareSliderHandle
+            className="[--slider-handle-bg:var(--color-primary)] hover:[--slider-handle-bg:#cc411f]"
             buttonStyle={{
-              backgroundColor: "var(--color-primary)",
+              backgroundColor: "var(--slider-handle-bg)",
               border: 0,
               backdropFilter: "none",
               boxShadow: "0 4px 12px rgb(0 0 0 / 0.25)",
+              transition: "background-color 200ms",
             }}
           />
         }
