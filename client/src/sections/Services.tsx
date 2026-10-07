@@ -22,7 +22,7 @@ const services: Service[] = [
     icon: crack,
     heading: "Crack & Damage Repair",
     paragraph:
-      "No crack, dent, or water stain goes unaddressed. We carefully inspect and repair damage early before it has the chance to spread or cause bigger problems down the line, leaving your walls structurally sound, and smooth.",
+      "Every crack, dent, and water stain gets our attention. We carefully inspect and repair damage early, before it has the chance to spread or cause bigger problems down the line, leaving your walls structurally sound and smooth.",
   },
   {
     icon: restoration,
