@@ -36,7 +36,7 @@ const Services = () => {
   return (
     <section id="services" className="py-24 lg:py-32 overflow-hidden">
       <div className="container space-y-4 mx-auto px-4 md:px-6">
-        <h2 className="text-3xl lg:text-4xl font-bold leading-tight animate-in animation-delay-100 lg:text-start">
+        <h2 className="text-3xl lg:text-4xl font-bold leading-tight lg:text-start">
           Services We Provide
         </h2>
         <div className="grid lg:grid-cols-[1fr_1fr_1.2fr] gap-4">
