@@ -45,11 +45,10 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight animate-in slide-in-from-bottom duration-700">
-                Expert Drywall Repairs, Done Right the First Time
+                Flawless Walls, From Repair to Final Coat
               </h1>
               <p className="text-lg text-muted font-medium max-w-lg leading-relaxed animate-in slide-in-from-bottom duration-700 delay-100">
-                Professional drywall patching, crack repair, and wall
-                restoration for residential and commercial properties.
+                Drywall patching, crack repair, wall restoration, and painting for residential and commercial properties.
               </p>
             </div>
             <div className="slide-in-from-bottom animate-in duration-700 delay-300">
